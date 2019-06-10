@@ -5,6 +5,7 @@
 <title> 개설 강의 조회</title>
 <style>
 }
+<<<<<<< HEAD
 a:hover {
  color:#ffffff;
  border-bottom:1px solid black;
@@ -21,6 +22,30 @@ th{
 color: white;
 background-color: #8C8CF5;
 
+=======
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
+a:hover {
+ color:#ffffff;
+ border-bottom:1px solid black;
+}
+table{
+margin-top:70px;
+border:none;
+border-collapse: collapse;
+}
+tr, td{ border:1px solid #8C8CF5;
+border-collapse: collapse;
+font-family: 'Nanum Gothic', sans-serif;
+font-size:13px;
+color:#444444;
+}
+
+th{
+color: white;
+background-color: #8C8CF5;
+font-family: 'Nanum Gothic', sans-serif;
+font-size:13px;
+>>>>>>> refs/remotes/origin/modify2_hm
 }
 </style>
 </head>

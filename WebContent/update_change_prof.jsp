@@ -5,18 +5,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>강사 정보 수정</title>
 <style>
-ul{text-align: center; color:#ffffff;}
-ul li {display:inline-block; margin-right: 60px; color:#ffffff;}
-ul li:LAST-CHILD{ margin-right: 0;}
-nav{
-margin-top:100px;
-padding:1px 0;
-background-color:#0d0d5b;
-border-top: 1px solid #0d0d5b;
-border-bottom: 1px solid #0d0d5b;
-color:#ffffff;
 }
- 
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);  
 a:hover {
  color:#ffffff;
  border-bottom:1px solid black;
@@ -24,7 +14,8 @@ a:hover {
 
 input[type=submit] {
     width: 50%;
-    
+    font-family: 'Nanum Gothic', sans-serif;
+	font-size:13px;
     font-size:20px;
     border-color: #0d0d5b;
     color: #0d0d5b;
@@ -37,23 +28,43 @@ input[type=submit] {
 }
 table{
    margin-top:80px;
-   border: 0px solid #0d0d5b;
+   border: 0px solid #8C8CF5;
    text-align: center;
    }
    
 th{
-   background-color:  #0d0d5b;
+   background-color:  #8C8CF5;
    color:white;
+   font-family: 'Nanum Gothic', sans-serif;
+   font-size:13px;
    }
    td{
-   border:1px solid #0d0d5b;
-   
+   border:1px solid #8C8CF5;
+   font-family: 'Nanum Gothic', sans-serif;
+   font-size:13px;
+   color:#444444;
    }
+   
+#button {
+  background:#FFFFCC;
+  color:#444444;
+  border:none;
+  height:30px;
+  font-size:14px;
+  padding:0 8em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  align:center;
+  font-family: 'Nanum Gothic', sans-serif;
+}
 </style>
 </head>
 <body>
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+     <div class="w-100">
+       <h2 class="mb-5">Modify</h2>
 <%@ include file="top_prof.jsp" %> 
-<h3 style="text-align: center;">강사 정보 수정</h3>
 
 <%
 if (session_id==null) {
@@ -79,9 +90,7 @@ stmt = myConn.createStatement();
 <%
 String userID =request.getParameter("userID");
 String userPassword =request.getParameter("userPassword");
-
 mySQL =  "select * from professor where p_id='" + session_id + "'" ; 
-
 ResultSet rs = stmt.executeQuery(mySQL);
 rs.next();
 String p_name = rs.getString("p_name");
@@ -130,6 +139,8 @@ mySQL2 = "update professor set p_pwd = '" + p_pwd + "' p_email = '" + p_email + 
 </table>
 </form>
 
+</div>
+</section>
 <%
 stmt.close();
 myConn.close();

@@ -29,7 +29,6 @@ a:hover {
  color:#ffffff;
  border-bottom:1px solid black;
 }
-
 input[type=submit] {
     width: 50%;
     
@@ -54,10 +53,9 @@ th{
    border:1px solid #8C8CF5;
    color:white;
    }
-   td{
-   border:1px solid #8C8CF5;
-   
-   }
+td{
+   border:1px solid #8C8CF5;   
+}
 </style>
 </head>
 <body>
@@ -86,9 +84,7 @@ stmt = myConn.createStatement();
 <%
 String userID =request.getParameter("userID");
 String userPassword =request.getParameter("userPassword");
-
 mySQL =  "select * from student where s_id='" + session_id + "'" ; 
-
 ResultSet rs = stmt.executeQuery(mySQL);
 rs.next();
    String s_pwd = rs.getString("s_pwd");
@@ -159,4 +155,3 @@ mySQL2 = "update student set s_pwd = '" + s_pwd + "' s_tel = '" + s_tel + "' whe
 </body>
 
 </html>
-

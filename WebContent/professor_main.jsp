@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=EUC-KR" %>
-<html><head>
+<html>
 <head>
 
   <meta charset="utf-8">
@@ -31,9 +31,7 @@
         <h1 class="mb-0">Welecome To
           <span class="text-primary">SMU</span>
         </h1>
-        
         <div class="subheading mb-5">Sookmyung Women's University enrollment application system.</div>		
-
 		
 		<table width="100%"  style="padding-top:20px;  text-align: center;">
 		<% if (session_id!= null) { %>

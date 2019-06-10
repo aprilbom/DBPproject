@@ -15,19 +15,23 @@ a:hover {
  color:#ffffff;
  border-bottom:1px solid black;
 }
-
 table{
 margin-top:40px;
 border:none;
 border-collapse: collapse;
+font-family: 'Nanum Gothic', sans-serif;
 }
 tr, td{ border:1px solid #8C8CF5;
 border-collapse: collapse;
+font-family: 'Nanum Gothic', sans-serif;
+font-size:13px;
+color : #444444;
 }
 th{
 color: white;
 background-color: #8C8CF5;
-
+font-family: 'Nanum Gothic', sans-serif;
+font-size:13px
 }
 button {
     width: 70%;
@@ -151,29 +155,17 @@ button {
 				result2 = cstmt.getString(5);
 				%>
 				
-			
+				
 			<table width="75%" height="15%"  style="border: none; ">
-			<tr style="border: none;"><td style="border: none;">
+			<tr style="border: none; font-family: 'Nanum Gothic', sans-serif; font-size:13px"><td style="border: none;">
 			<b><%=nYear%></b>년도 <b><%=nSemester%></b>학기 수강조회
 			</td></tr>
-			<tr style="border: none;">
+			<tr style="border: none; font-family: 'Nanum Gothic', sans-serif; font-size:13px">
 				<td style="border: none;">● 총 <b><%=result1%></b> 과목을 신청했습니다.</td>
 			</tr>
 			
-			<tr style="border: none;">
+			<tr style="border: none;font-family: 'Nanum Gothic', sans-serif; font-size:13px">
 				<td style="border: none;">● 총 <b><%=result2%></b> 학점을 신청했습니다.</td>
-			</tr>
-			</table>
-			
-			<table width="50%" align="center" style="border: none; ">
-			<tr style="border: none;" >
-				<td style="border: none;"><input type="text" id="nYear" name="nYear" value=<%=nYear%> /> 년도</td>
-				<td style="border: none;"><input type="text" id="nSemester" name="nSemester" value=<%=nSemester%> />학기</td>
-				<td style="border: none;"><input type="submit" value="조회" style=" border-color: #0d0d5b; color: black; padding-top:3px; border-radius: 4px;
-    		cursor: pointer;  width: 70%;
-    
-    		font-size:15px;
-    		align:center;"/></td>
 			</tr>
 			</table>
 			

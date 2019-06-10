@@ -11,33 +11,43 @@
 
 <style>
 }
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 a:hover {
  color:#ffffff;
  border-bottom:1px solid black;
+ font-family: 'Nanum Gothic', sans-serif;
 }
 
 table{
 margin-top:40px;
 border:none;
 border-collapse: collapse;
+font-family: 'Nanum Gothic', sans-serif;
 }
-tr, td{ border:1px solid #8C8CF5;
+tr, td{ 
+border:1px solid #8C8CF5;
 border-collapse: collapse;
+font-family: 'Nanum Gothic', sans-serif;
+color :#444444;
+font-size:13px;
 }
 th{
+font-family: 'Nanum Gothic', sans-serif;
 color: white;
 background-color: #8C8CF5;
-
 }
 button {
-    width: 70%;
-    font-size:15px;
-    border-color: #0d0d5b;
-    color: black;
-    padding-top:3px;
-    border-radius: 4px;
-    cursor: pointer;
-    align:center;
+  background:#FFFFCC;
+  color:#444444;
+  border:none;
+  height:25px;
+  font-size:1.6em;
+  padding:0 0.5em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  align:center;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 </style>
 </head>
@@ -55,7 +65,7 @@ if (session_id==null) {
 		        <form action="delete_verify.jsp" method="post">
 		<table width="75%" height="120px"  border>
 		<br>
-		<tr><th style="text-align : center;">course id</th><th style="text-align : center;">과목명</th><th style="text-align : center;">분반</th><th style="text-align : center;">강의실</th><th style="text-align : center;">시간</th><th style="text-align : center;">학점</th><th>교수명</th><th style="text-align : center;">수강취소</th></tr>
+		<tr><th style="text-align : center;">과목번호</th><th style="text-align : center;">과목명</th><th style="text-align : center;">분반</th><th style="text-align : center;">강의실</th><th style="text-align : center;">시간</th><th style="text-align : center;">학점</th><th>교수명</th><th style="text-align : center;">수강취소</th></tr>
 		<%	
 			Connection myConn = null; 
 			Statement stmt = null;	
@@ -122,21 +132,12 @@ if (session_id==null) {
 		<%
 		}
 	}
-
 	stmt.close(); 
 	myConn.close();
 %>
 </table>
 </form>
-</body>
 </div>
 </section>
+</body>
  </html>
-
- <!-- 여기가 style 끝-->
-  
-
-
-
-
-			

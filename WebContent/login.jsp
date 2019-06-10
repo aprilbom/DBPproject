@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=EUC-KR" %>
-<html>
+<HTML>
 <head>
 
   <meta charset="utf-8">
@@ -21,7 +21,30 @@
   <link href="css/resume.min.css" rel="stylesheet">
 
 </head>
-
+<style>
+#button {
+  background:#FFFFCC;
+  color:#444444;
+  border:none;
+  height:25px;
+  font-size:14px;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  align:center;
+  font-family: 'Nanum Gothic', sans-serif;}
+  
+ #ff{
+         width:300px;
+         border: 1px solid gray;
+         border-radius: 5px;
+         padding: 15px;
+         font-family: 'Nanum Gothic', sans-serif;
+         font-size:15px;
+         color:#444444;
+}
+</style>
 <body id="page-top">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
@@ -52,7 +75,7 @@
           <a class="nav-link js-scroll-trigger" href="update.jsp">Modify</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="jsp.html">Login</a>
+          <a class="nav-link js-scroll-trigger" href="login.jsp">Login</a>
         </li>
       </ul>
     </div>
@@ -68,19 +91,19 @@
         <div class="subheading mb-5">Sookmyung Women's University enrollment application system.</div>
         
         <div align = "left">
+
         <table width="75%" align="left" >
-		<form method="post" action="login_verify.jsp" >
-		<tr>
-		<td><div>ID<input type="text" name="userID" style="vertical-align: 0px"></div></td>
-		</tr>
-		<tr>
-		<td><div>PW<input type="password" name="userPassword" style="vertical-align: 1px">
-		</div></td><br>
-		</tr>
-		<td>
-		<INPUT TYPE="SUBMIT" NAME="Submit" VALUE="로그인" >
-		<INPUT TYPE="RESET" VALUE="취소" >
-		</td>
+
+		<form id="ff" method="post" action="login_verify.jsp" >
+		
+		<div align = "center">ID :<input type="text" name="userID" style = "display:block; margin-bottom:10px;"></div>
+		<div align = "center">PW :<input type="password" name="userPassword" style = "display:block;">
+		</div>
+		<br>
+		<div align = "center">
+		<INPUT id = "button" TYPE="SUBMIT" NAME="Submit" VALUE="login" >
+		<INPUT id = "button" TYPE="RESET" VALUE="cancle" ></div>
+
 		</form>
 		</table>
         </div>
@@ -102,5 +125,5 @@
   <script src="js/resume.min.js"></script>
   
 </body>
+</HTML>
 
-</html>

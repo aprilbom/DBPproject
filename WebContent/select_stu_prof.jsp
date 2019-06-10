@@ -5,6 +5,7 @@
 <title>수강학생 조회</title>
 <style>
 }
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
 a:hover {
  color:#ffffff;
  border-bottom:1px solid black;
@@ -16,11 +17,30 @@ border-collapse: collapse;
 }
 tr, td{ border:1px solid #8C8CF5;
 border-collapse: collapse;
+font-family: 'Nanum Gothic', sans-serif;
+font-size:13px;
+color:#444444;
 }
+
 th{
 color: white;
 background-color: #8C8CF5;
+font-family: 'Nanum Gothic', sans-serif;
+font-size:13px;
+}
 
+#button {
+  background:#FFFFCC;
+  color:#444444;
+  border:none;
+  height:25px;
+  font-size:14px;
+  padding:0 0.5em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  align:center;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 </style>
 </head>
@@ -29,6 +49,7 @@ background-color: #8C8CF5;
      <div class="w-100">
        <h2 class="mb-5">My Student</h2>
 	<%@ include file="top_prof.jsp"%>
+	
 	<% if (session_id==null) {
 		response.sendRedirect("login.jsp");
 		return;

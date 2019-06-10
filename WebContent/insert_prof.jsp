@@ -6,7 +6,7 @@
 <title>강의조회</title>
 <style>
 }
- 
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
 a:hover {
  color:#ffffff;
  border-bottom:1px solid black;
@@ -34,11 +34,29 @@ table{
 th{
    background-color:  #8C8CF5;
    color:white;
+   font-family: 'Nanum Gothic', sans-serif;
+   font-size:13px;
    }
    td{
    border:1px solid #8C8CF5;
-   
+   font-family: 'Nanum Gothic', sans-serif;
+   font-size:13px;
+   color:#444444;
    }
+   
+#button {
+  background:#FFFFCC;
+  color:#444444;
+  border:none;
+  height:25px;
+  font-size:14px;
+  padding:0 0.5em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  align:center;
+  font-family: 'Nanum Gothic', sans-serif;
+}
 </style>
 </head>
 
@@ -51,15 +69,6 @@ th{
 		   response.sendRedirect("login.jsp");
 		   return;
 		}
-		
-		
-		//String coursename= request.getParameter("coursename");
-		//String courseid= request.getParameter("courseid");
-		//String courseclass= request.getParameter("courseclass");
-		//String coursecredit= request.getParameter("coursecredit");
-		//String courseclassroom= request.getParameter("courseclassroom");
-		//String coursemax= request.getParameter("coursemax");
-		
 		
 		
 		%>
