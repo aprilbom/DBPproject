@@ -9,8 +9,9 @@
 <%@ include file="top.jsp" %>
 
 <%
+String session_id= (String)session.getAttribute("userID");
 if (session_id==null) {
-	response.sendRedirect("login.jsp");  
+   response.sendRedirect("login.jsp");  
 }
 %>
 

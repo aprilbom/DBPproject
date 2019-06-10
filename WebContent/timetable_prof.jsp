@@ -12,12 +12,6 @@
 
 <style>
 
-
-a:hover {
- color:#ffffff;
- border-bottom:1px solid black;
-}
-
 table {
    width: 750px;
    margin-left: auto;
