@@ -54,15 +54,9 @@ button {
 	%>
 	<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
-        <h2 class="mb-5">My Class</h2>
+        <h2>My Class</h2>
 		<form id="my_form" action="select_search.jsp" method="post"></form>
-	
-	<table height="100px" width="75%"  border>
-		<br>
-		<br>
-		<br>
-		<br>
-		<tr>
+	<table height="90px" width="75%"  border>
 			<th style="text-align : center;">과목번호</th>
 			<th style="text-align : center;">분반</th>
 			<th style="text-align : center;">과목명</th>

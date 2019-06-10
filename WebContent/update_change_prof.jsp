@@ -63,7 +63,7 @@ th{
 <body>
 <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
      <div class="w-100">
-       <h2 class="mb-5">Modify</h2>
+       <h2 style="height: 150px;">Modify</h2>
 <%@ include file="top_prof.jsp" %> 
 
 <%

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <%@ page contentType="text/html; charset=EUC-KR" %>
 <HTML>
 <head>
@@ -128,7 +127,6 @@
 </body>
 </HTML>
 
-=======
 <%@ page contentType="text/html; charset=EUC-KR" %>
 <html>
 <head>
@@ -237,4 +235,3 @@
 </body>
 
 </html>
->>>>>>> refs/remotes/origin/login_bom

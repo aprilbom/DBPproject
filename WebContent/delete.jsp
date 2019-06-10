@@ -64,7 +64,6 @@ if (session_id==null) {
         <h2 class="mb-5">Delete Class</h2>
 		        <form action="delete_verify.jsp" method="post">
 		<table width="75%" height="120px"  border>
-		<br>
 		<tr><th style="text-align : center;">과목번호</th><th style="text-align : center;">과목명</th><th style="text-align : center;">분반</th><th style="text-align : center;">강의실</th><th style="text-align : center;">시간</th><th style="text-align : center;">학점</th><th>교수명</th><th style="text-align : center;">수강취소</th></tr>
 		<%	
 			Connection myConn = null; 
