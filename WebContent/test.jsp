@@ -4,32 +4,43 @@
 <html><head><title>수강신청 입력</title>
 <style>
 }
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 a:hover {
  color:#ffffff;
  border-bottom:1px solid black;
+ font-family: 'Nanum Gothic', sans-serif;
 }
 
 table{
 margin-top:40px;
 border:none;
 border-collapse: collapse;
+font-family: 'Nanum Gothic', sans-serif;
 }
-tr, td{ border:1px solid #8C8CF5;
+tr, td{ 
+border:1px solid #8C8CF5;
 border-collapse: collapse;
+font-family: 'Nanum Gothic', sans-serif;
+color :#444444;
+font-size:13px;
 }
 th{
+font-family: 'Nanum Gothic', sans-serif;
 color: white;
 background-color: #8C8CF5;
 }
 button {
-    width: 70%;
-    font-size:15px;
-    border-color: #0d0d5b;
-    color: black;
-    padding-top:3px;
-    border-radius: 4px;
-    cursor: pointer;
-    align:center;
+  background:#FFFFCC;
+  color:#444444;
+  border:none;
+  height:25px;
+  font-size:1.6em;
+  padding:0 0.5em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  align:center;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .bottomleft {
@@ -39,6 +50,7 @@ left: 0.5em;
 width: 400px;
 font-weight: bold;
 color: #fff;
+font-family: 'Nanum Gothic', sans-serif;
 }
 </style>
 </head>
@@ -61,13 +73,14 @@ color: #fff;
 		<option value = "2" selected>과목명</option>
 		<option value = "3">교수명</option></select>
 		<input type="text" name="course_num">
-		<INPUT TYPE="SUBMIT" NAME="Submit"  VALUE="검색"> </div>
+		<INPUT TYPE="SUBMIT" NAME="Submit"  VALUE="검색" style = " background:#FFFFCC; color:#444444; border:none;height:30px;
+  font-size:13px; padding:0 0.5em; cursor:pointer; transition:800ms ease all; outline:none; align:center; font-family: 'Nanum Gothic', sans-serif;"> </div>
 		</form>
 
 		<table width="75%" height="100px" border="1">
 		<tr>
-		<th style="background-color: #8C8CF5;" >과목번호</th><th style="background-color: #8C8CF5;" >과목명</th><th style="background-color: #8C8CF5;">분반</th><th style="background-color: #8C8CF5;">강의실</th><th style="background-color: #8C8CF5;">시간</th>
-		<th style="background-color: #8C8CF5;">학점</th><th style="background-color: #8C8CF5;">교수명</th><th width="70px" style="background-color: #8C8CF5;">신청</th><th width="70px" style="background-color: #8C8CF5;">정원</th><th width="80px" style="background-color: #8C8CF5;">수강신청</th>
+		<th style="background-color: #8C8CF5; text-align :center"  >과목번호</th><th style="background-color: #8C8CF5; text-align :center" >과목명</th><th style="background-color: #8C8CF5; text-align :center">분반</th><th style="background-color: #8C8CF5; text-align :center">강의실</th><th style="background-color: #8C8CF5; text-align :center">시간</th>
+		<th style="background-color: #8C8CF5; text-align :center">학점</th><th style="background-color: #8C8CF5; text-align :center">교수명</th><th width="70px" style="background-color: #8C8CF5; text-align :center">신청</th><th width="70px" style="background-color: #8C8CF5; text-align :center">정원</th><th width="80px" style="background-color: #8C8CF5; text-align :center">수강신청</th>
 		</tr> 
 		
 		<%

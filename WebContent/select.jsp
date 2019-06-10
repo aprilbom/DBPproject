@@ -20,13 +20,19 @@ table{
 margin-top:40px;
 border:none;
 border-collapse: collapse;
+font-family: 'Nanum Gothic', sans-serif;
 }
 tr, td{ border:1px solid #8C8CF5;
 border-collapse: collapse;
+font-family: 'Nanum Gothic', sans-serif;
+font-size:13px;
+color : #444444;
 }
 th{
 color: white;
 background-color: #8C8CF5;
+font-family: 'Nanum Gothic', sans-serif;
+font-size:13px
 
 }
 button {
@@ -153,14 +159,14 @@ button {
 				
 			
 			<table width="75%" height="15%"  style="border: none; ">
-			<tr style="border: none;"><td style="border: none;">
+			<tr style="border: none; font-family: 'Nanum Gothic', sans-serif; font-size:13px"><td style="border: none;">
 			<b><%=nYear%></b>년도 <b><%=nSemester%></b>학기 수강조회
 			</td></tr>
-			<tr style="border: none;">
+			<tr style="border: none; font-family: 'Nanum Gothic', sans-serif; font-size:13px">
 				<td style="border: none;">● 총 <b><%=result1%></b> 과목을 신청했습니다.</td>
 			</tr>
 			
-			<tr style="border: none;">
+			<tr style="border: none;font-family: 'Nanum Gothic', sans-serif; font-size:13px">
 				<td style="border: none;">● 총 <b><%=result2%></b> 학점을 신청했습니다.</td>
 			</tr>
 			</table>

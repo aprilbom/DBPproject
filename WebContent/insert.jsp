@@ -1,6 +1,7 @@
 <%@ page contentType="text/html; charset=EUC-KR" %>
 <%@ page import="java.sql.*" %>
 
+
 <html><head><title>수강신청 입력</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,32 +13,44 @@
 
 <style>
 }
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 a:hover {
  color:#ffffff;
  border-bottom:1px solid black;
+ font-family: 'Nanum Gothic', sans-serif;
 }
 
 table{
 margin-top:40px;
 border:none;
 border-collapse: collapse;
+font-family: 'Nanum Gothic', sans-serif;
 }
-tr, td{ border:1px solid #8C8CF5;
+tr, td{ 
+border:1px solid #8C8CF5;
 border-collapse: collapse;
+font-family: 'Nanum Gothic', sans-serif;
+font-size:13px;
+color :#444444;
+
 }
 th{
+font-family: 'Nanum Gothic', sans-serif;
 color: white;
 background-color: #8C8CF5;
 }
 button {
-    width: 70%;
-    font-size:15px;
-    border-color: #0d0d5b;
-    color: black;
-    padding-top:3px;
-    border-radius: 4px;
-    cursor: pointer;
-    align:center;
+  background:#FFFFCC;
+  color:#444444;
+  border:none;
+  height:25px;
+  font-size:1.6em;
+  padding:0 0.5em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  align:center;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .bottomleft {
@@ -47,6 +60,7 @@ left: 0.5em;
 width: 400px;
 font-weight: bold;
 color: #fff;
+font-family: 'Nanum Gothic', sans-serif;
 }
 </style>
 </head>
@@ -67,17 +81,20 @@ if (session_id==null) {
 		<option value = "1">과목번호</option>
 		<option value = "2" selected>과목명</option>
 		<option value = "3">교수명</option></select>
-		<input type="text" name="course_num">
-		<INPUT TYPE="SUBMIT" NAME="Submit"  VALUE="검색"> </div>
+		<input type="text" name="course_num" style = "height : 26px;">
+		<INPUT TYPE="SUBMIT" NAME="Submit"  VALUE="검색" style = "background:#FFFFCC;color:#444444;border:none;height:30px;font-size:13px;padding:0 0.5em;
+  cursor:pointer;transition:800ms ease all;outline:none;align:center;font-family: 'Nanum Gothic', sans-serif;"> </div>
 		</form>
 		
 		
 		
 		<table width="75%" height="100px" border="1">
+
 		<tr>
 		<th style="background-color: #8C8CF5; text-align : center;"  >과목번호</th><th style="background-color: #8C8CF5; text-align : center;" >과목명</th><th style="background-color: #8C8CF5; text-align : center;">분반</th><th style="background-color: #8C8CF5 ; text-align : center;">강의실</th><th style="background-color: #8C8CF5; text-align : center;">시간</th>
 		<th style="background-color: #8C8CF5; text-align : center;">학점</th><th style="background-color: #8C8CF5; text-align : center;">교수명</th><th width="70px" style="background-color: #8C8CF5; text-align : center;">신청</th><th width="70px" style="background-color: #8C8CF5; text-align : center;">정원</th><th width="80px" style="background-color: #8C8CF5; text-align : center;">수강신청</th>
 		</tr> 
+		
 		
 		<%
 		Connection myConn = null;
@@ -188,7 +205,7 @@ if (session_id==null) {
 		   if(c_id == c_id_comp[index] && c_name.equals(c_name_comp[index]) && c_class.equals(c_class_comp[index]) && c_day.equals(c_day_comp[index]) && c_time.equals(c_time_comp[index]) && p_name.equals(p_name_comp[index])){
 		      tf=1;
 		      %>
-		      <td align="center"> <a href="insert_verify.jsp?c_id=<%=c_id%>&c_class=<%=c_class%>"><button type="button" >신청</button></a></td>
+		      <td align="center"> <a href="insert_verify.jsp?c_id=<%=c_id%>&c_class=<%=c_class%>"><button type="button" >select</button></a></td>
 		<% }else if (index==i-1 && tf==0){
 		   %> <td></td>
 		<%   }

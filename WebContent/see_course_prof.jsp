@@ -5,6 +5,7 @@
 <title>개설 강의 조회</title>
 <style>
 }
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
 a:hover {
  color:#ffffff;
  border-bottom:1px solid black;
@@ -16,11 +17,29 @@ border-collapse: collapse;
 }
 tr, td{ border:1px solid #8C8CF5;
 border-collapse: collapse;
+font-family: 'Nanum Gothic', sans-serif;
+font-size:13px;
+color:#444444;
 }
 th{
 color: white;
 background-color: #8C8CF5;
+font-family: 'Nanum Gothic', sans-serif;
+font-size:13px;
+}
 
+button {
+  background:#FFFFCC;
+  color:#444444;
+  border:none;
+  height:25px;
+  font-size:1.6em;
+  padding:0 0.5em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  align:center;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 </style>
 </head>
@@ -116,7 +135,7 @@ background-color: #8C8CF5;
 			<td align="center"><%=c_credit%></td>
 			<td align="center"><%=p_name%></td>
 			<td align="center">
-				<a href="delete_verify_prof.jsp?c_id=<%= c_id %>&c_class=<%= c_class %>&nYear=<%= nYear %>&nSemester=<%= nSemester %>"><button type="button" >삭제</button></a>
+				<a href="delete_verify_prof.jsp?c_id=<%= c_id %>&c_class=<%= c_class %>&nYear=<%= nYear %>&nSemester=<%= nSemester %>"><button type="button" >Delete</button></a>
 			</td>
 		</tr>
 		

@@ -70,10 +70,10 @@
         </div>		
 		<body background="C:\apache-tomcat-7\webapps\ROOT\dbproject\WebContent\school.jpg" >
 		<%@ include file="top.jsp" %>
-		<table width="100%"  style="padding-top:20px;  text-align: center;">
+		<table width="100%"  style="padding-top:20px; ">
 		<% if (session_id!= null) { %>
 		<tr>
-		<td><b><%=session_id%></b> 님 방문을 환영합니다.</td>
+		<td style="font-family: 'Hanna', sans-serif; color :black"><b><%=session_id%></b> 님 방문을 환영합니다.</td>
 		</tr>
 		<% } else { %>
 		<tr>
