@@ -42,6 +42,7 @@ th{
    font-family: 'Nanum Gothic', sans-serif;
    font-size:13px;
    color:#444444;
+   padding:15px;
    }
    
 #button {
@@ -109,7 +110,7 @@ th{
 		
 		</script>
 		<form name="table" method="post" action="insert_verify_prof.jsp" onsubmit="return check()">
-		<table width="50%" height="40%">
+		<table width="60%" height="40%">
 		<col width="120">
 		<tr>
 		   <th> ID </th>

@@ -23,10 +23,13 @@ border-collapse: collapse;
 }
 tr, td{ border:1px solid #8C8CF5;
 border-collapse: collapse;
+padding:10px;
 }
 th{
 color: white;
 background-color: #8C8CF5;
+
+padding:10px;
 
 }
 button {

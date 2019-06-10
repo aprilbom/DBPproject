@@ -23,6 +23,7 @@ margin-top:40px;
 border:none;
 border-collapse: collapse;
 font-family: 'Nanum Gothic', sans-serif;
+padding:10px;
 }
 tr, td{ 
 border:1px solid #8C8CF5;
@@ -30,11 +31,13 @@ border-collapse: collapse;
 font-family: 'Nanum Gothic', sans-serif;
 color :#444444;
 font-size:13px;
+padding:10px;
 }
 th{
 font-family: 'Nanum Gothic', sans-serif;
 color: white;
 background-color: #8C8CF5;
+padding:10px;
 }
 button {
   background:#FFFFCC;
@@ -63,7 +66,7 @@ if (session_id==null) {
       <div class="w-100">
         <h2 class="mb-5">Delete Class</h2>
 		        <form action="delete_verify.jsp" method="post">
-		<table width="75%" height="120px"  border>
+		<table width="90%" height="120px"  border>
 		<tr><th style="text-align : center;">과목번호</th><th style="text-align : center;">과목명</th><th style="text-align : center;">분반</th><th style="text-align : center;">강의실</th><th style="text-align : center;">시간</th><th style="text-align : center;">학점</th><th>교수명</th><th style="text-align : center;">수강취소</th></tr>
 		<%	
 			Connection myConn = null; 

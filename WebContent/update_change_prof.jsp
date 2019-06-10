@@ -136,6 +136,7 @@ mySQL2 = "update professor set p_pwd = '" + p_pwd + "' p_email = '" + p_email + 
 <tr>
    <td colspan="2" style="border-style: none"><input type="submit" value="È®ÀÎ"></td>
 </tr>
+
 </table>
 </form>
 

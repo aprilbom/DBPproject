@@ -16,6 +16,7 @@ margin-top:40px;
 border:none;
 border-collapse: collapse;
 font-family: 'Nanum Gothic', sans-serif;
+padding:10px;
 }
 tr, td{ 
 border:1px solid #8C8CF5;
@@ -23,11 +24,13 @@ border-collapse: collapse;
 font-family: 'Nanum Gothic', sans-serif;
 color :#444444;
 font-size:13px;
+padding:10px;
 }
 th{
 font-family: 'Nanum Gothic', sans-serif;
 color: white;
 background-color: #8C8CF5;
+padding:10px;
 }
 button {
   background:#FFFFCC;
@@ -77,7 +80,7 @@ font-family: 'Nanum Gothic', sans-serif;
   font-size:13px; padding:0 0.5em; cursor:pointer; transition:800ms ease all; outline:none; align:center; font-family: 'Nanum Gothic', sans-serif;"> </div>
 		</form>
 
-		<table width="75%" height="100px" border="1">
+		<table width="90%" height="100px" border="1">
 		<tr>
 		<th style="background-color: #8C8CF5; text-align :center"  >과목번호</th><th style="background-color: #8C8CF5; text-align :center" >과목명</th><th style="background-color: #8C8CF5; text-align :center">분반</th><th style="background-color: #8C8CF5; text-align :center">강의실</th><th style="background-color: #8C8CF5; text-align :center">시간</th>
 		<th style="background-color: #8C8CF5; text-align :center">학점</th><th style="background-color: #8C8CF5; text-align :center">교수명</th><th width="70px" style="background-color: #8C8CF5; text-align :center">신청</th><th width="70px" style="background-color: #8C8CF5; text-align :center">정원</th><th width="80px" style="background-color: #8C8CF5; text-align :center">수강신청</th>

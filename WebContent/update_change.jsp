@@ -25,37 +25,47 @@
   
 <style>
 }
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
 a:hover {
  color:#ffffff;
  border-bottom:1px solid black;
 }
-input[type=submit] {
-    width: 50%;
-    
-    font-size:20px;
-    border-color: #0d0d5b;
-    color: #0d0d5b;
-    background-color:white;
-    margin-top:10px;
-    padding-top:3px;
-    border-radius: 4px;
-    cursor: pointer;
-    align:center;
-}
 table{
-   margin-top:80px;
-   border: 0px solid #8C8CF5;
-   text-align: center;
-   }
-   
+	margin-top:80px;
+	border: 0px solid #0d0d5b;
+	text-align: center;
+	font-family: 'Nanum Gothic', sans-serif;
+
+	}
+	
 th{
-   background-color:  #8C8CF5;
-   border:1px solid #8C8CF5;
-   color:white;
-   }
-td{
-   border:1px solid #8C8CF5;   
+	background-color:  #8C8CF5;
+	color:white;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size:13px;
+	
+	}
+	td{
+	border:1px solid #8C8CF5;
+	border-collapse: collapse;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size:13px;
+	color : #444444;
+	}
+button {
+  background:#FFFFCC;
+  color:#444444;
+  border:none;
+  height:30px;
+  font-size:1.6em;
+  padding:0 10em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  align:center;
+  font-family: 'Nanum Gothic', sans-serif;
 }
+
 </style>
 </head>
 <body>
@@ -140,8 +150,11 @@ mySQL2 = "update student set s_pwd = '" + s_pwd + "' s_tel = '" + s_tel + "' whe
 	</tr>
 	
 	<tr>
-	   <td colspan="2" style="border-style: none"><input type="submit" value="확인"></td>
+	   <td colspan="2"><button>확인</button></td>
 	</tr>
+
+	
+	
 	</table>
 	</form>
 	</div>
