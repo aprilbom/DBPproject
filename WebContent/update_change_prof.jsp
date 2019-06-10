@@ -109,7 +109,7 @@ mySQL2 = "update professor set p_pwd = '" + p_pwd + "' p_email = '" + p_email + 
 </tr>
 <tr>
 	<th> Password </th>
-	<td><input type="text" name="newpwd" id="newpwd" value="<%=p_pwd%>"></td>
+	<td><input type="password" name="newpwd" id="newpwd" value="<%=p_pwd%>"></td>
 </tr>
 <tr>
 	<th> Name </th>
@@ -121,7 +121,7 @@ mySQL2 = "update professor set p_pwd = '" + p_pwd + "' p_email = '" + p_email + 
 </tr>
 <tr>
 	<th > Email </th>
-	<td><input type="text" name="newemail" id="newemail" value="<%=p_email%>"></td>
+	<td><input type="email" name="newemail" id="newemail" value="<%=p_email%>"></td>
 </tr>	
 
 <tr>
