@@ -63,7 +63,7 @@ font-family: 'Nanum Gothic', sans-serif;
 <%@ include file="top.jsp" %>
 <%
 if (session_id==null) {
-	response.sendRedirect("index.html");
+	response.sendRedirect("login.jsp");
 	%><script>alert("로그인 후 이용하세요");</script><%
 	return;
 }

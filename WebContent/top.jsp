@@ -7,7 +7,7 @@ String log;
 String log2;
 int login=0;
 if (session_id==null) {
-	log="index.html";
+	log="login.jsp";
 	log2="login";
 }
 else{
