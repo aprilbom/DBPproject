@@ -61,31 +61,22 @@ if (session_id==null) {
 %>
 <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
-	        <h2 class="mb-5">Select Class</h2>
-			<form method="post" action = "test.jsp"><div>
-			<select name="select">
-			<option value = "1">과목번호</option>
-			<option value = "2" selected>과목명</option>
-			<option value = "3">교수명</option></select>
-			<input type="text" name="course_num">
-			<INPUT TYPE="SUBMIT" NAME="Submit"  VALUE="검색">
-		</div>
+        <h2 class="mb-5">Select Class</h2>
+		<form method="post" action = "test.jsp"><div>
+		<select name="select">
+		<option value = "1">과목번호</option>
+		<option value = "2" selected>과목명</option>
+		<option value = "3">교수명</option></select>
+		<input type="text" name="course_num">
+		<INPUT TYPE="SUBMIT" NAME="Submit"  VALUE="검색"> </div>
 		</form>
 		
 		
 		
 		<table width="75%" height="100px" border="1">
 		<tr>
-		<th style="background-color: #8C8CF5; text-align: center;">과목번호</th>
-		<th style="background-color: #8C8CF5; text-align: center;">과목명</th>
-		<th style="background-color: #8C8CF5; text-align: center;">분반</th>
-		<th style="background-color: #8C8CF5; text-align: center;">강의실</th>
-		<th style="background-color: #8C8CF5; text-align: center;">시간</th>
-		<th style="background-color: #8C8CF5; text-align: center;">학점</th>
-		<th style="background-color: #8C8CF5; text-align: center;">교수명</th>
-		<th width="70px" style="background-color: #8C8CF5; text-align: center;">신청</th>
-		<th width="70px" style="background-color: #8C8CF5; text-align: center;">정원</th>
-		<th width="80px" style="background-color: #8C8CF5; text-align: center;">수강신청</th>
+		<th style="background-color: #8C8CF5; text-align : center;"  >과목번호</th><th style="background-color: #8C8CF5; text-align : center;" >과목명</th><th style="background-color: #8C8CF5; text-align : center;">분반</th><th style="background-color: #8C8CF5 ; text-align : center;">강의실</th><th style="background-color: #8C8CF5; text-align : center;">시간</th>
+		<th style="background-color: #8C8CF5; text-align : center;">학점</th><th style="background-color: #8C8CF5; text-align : center;">교수명</th><th width="70px" style="background-color: #8C8CF5; text-align : center;">신청</th><th width="70px" style="background-color: #8C8CF5; text-align : center;">정원</th><th width="80px" style="background-color: #8C8CF5; text-align : center;">수강신청</th>
 		</tr> 
 		
 		<%

@@ -5,16 +5,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>강사 정보 수정</title>
 <style>
-ul{text-align: center; color:#ffffff;}
-ul li {display:inline-block; margin-right: 60px; color:#ffffff;}
-ul li:LAST-CHILD{ margin-right: 0;}
-nav{
-margin-top:100px;
-padding:1px 0;
-background-color:#0d0d5b;
-border-top: 1px solid #0d0d5b;
-border-bottom: 1px solid #0d0d5b;
-color:#ffffff;
 }
  
 a:hover {
@@ -37,23 +27,25 @@ input[type=submit] {
 }
 table{
    margin-top:80px;
-   border: 0px solid #0d0d5b;
+   border: 0px solid #8C8CF5;
    text-align: center;
    }
    
 th{
-   background-color:  #0d0d5b;
+   background-color:  #8C8CF5;
    color:white;
    }
    td{
-   border:1px solid #0d0d5b;
+   border:1px solid #8C8CF5;
    
    }
 </style>
 </head>
 <body>
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+     <div class="w-100">
+       <h2 class="mb-5">Modify</h2>
 <%@ include file="top_prof.jsp" %> 
-<h3 style="text-align: center;">강사 정보 수정</h3>
 
 <%
 if (session_id==null) {
@@ -101,7 +93,7 @@ mySQL2 = "update professor set p_pwd = '" + p_pwd + "' p_email = '" + p_email + 
 <h3 style="text-align: center;"><%=p_pwd%></h3> -->
 
 <form method="post" action="update_verify.jsp">
-<table width="50%" height="40%" align="center">
+<table width="50%" height="40%" >
 <col width="120">
 <tr>
 	<th> ID </th>

@@ -9,8 +9,6 @@
   <meta name="author" content="">
 
   <title>수강신청 조회</title>
-
-</head>
 <style>
 }
 a:hover {
@@ -42,6 +40,7 @@ button {
     align:center;
 }
 </style>
+</head>
 <body>
 	<%@ include file="top.jsp"%>
 	<% if (session_id==null) {
@@ -54,15 +53,19 @@ button {
         <h2 class="mb-5">My Class</h2>
 		<form id="my_form" action="select_search.jsp" method="post"></form>
 	
-	<table height="100px" width="75%" align="center" border>
+	<table height="100px" width="75%"  border>
+		<br>
+		<br>
+		<br>
+		<br>
 		<tr>
-		<th style="background-color: #8C8CF5; text-align: center;">과목번호</th>
-		<th style="background-color: #8C8CF5; text-align: center;">분반</th>
-		<th style="background-color: #8C8CF5; text-align: center;">과목명</th>
-		<th style="background-color: #8C8CF5; text-align: center;">강의실</th>
-		<th style="background-color: #8C8CF5; text-align: center;">시간</th>
-		<th style="background-color: #8C8CF5; text-align: center;">학점</th>
-		<th style="background-color: #8C8CF5; text-align: center;">교수명</th>
+			<th style="text-align : center;">과목번호</th>
+			<th style="text-align : center;">분반</th>
+			<th style="text-align : center;">과목명</th>
+			<th style="text-align : center;">강의실</th>
+			<th style="text-align : center;">시간</th>
+			<th style="text-align : center;">학점</th>
+			<th style="text-align : center;">교수명</th>
 		</tr>
 		<%
 		  
@@ -149,7 +152,7 @@ button {
 				%>
 				
 			
-			<table width="75%" height="15%" align="center" style="border: none; ">
+			<table width="75%" height="15%"  style="border: none; ">
 			<tr style="border: none;"><td style="border: none;">
 			<b><%=nYear%></b>년도 <b><%=nSemester%></b>학기 수강조회
 			</td></tr>

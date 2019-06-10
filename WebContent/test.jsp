@@ -66,16 +66,8 @@ color: #fff;
 
 		<table width="75%" height="100px" border="1">
 		<tr>
-		<th style="background-color: #8C8CF5; text-align: center;">과목번호</th>
-		<th style="background-color: #8C8CF5; text-align: center;">과목명</th>
-		<th style="background-color: #8C8CF5; text-align: center;">분반</th>
-		<th style="background-color: #8C8CF5; text-align: center;">강의실</th>
-		<th style="background-color: #8C8CF5; text-align: center;">시간</th>
-		<th style="background-color: #8C8CF5; text-align: center;">학점</th>
-		<th style="background-color: #8C8CF5; text-align: center;">교수명</th>
-		<th width="70px" style="background-color: #8C8CF5; text-align: center;">신청</th>
-		<th width="70px" style="background-color: #8C8CF5; text-align: center;">정원</th>
-		<th width="80px" style="background-color: #8C8CF5; text-align: center;">수강신청</th>
+		<th style="background-color: #8C8CF5;" >과목번호</th><th style="background-color: #8C8CF5;" >과목명</th><th style="background-color: #8C8CF5;">분반</th><th style="background-color: #8C8CF5;">강의실</th><th style="background-color: #8C8CF5;">시간</th>
+		<th style="background-color: #8C8CF5;">학점</th><th style="background-color: #8C8CF5;">교수명</th><th width="70px" style="background-color: #8C8CF5;">신청</th><th width="70px" style="background-color: #8C8CF5;">정원</th><th width="80px" style="background-color: #8C8CF5;">수강신청</th>
 		</tr> 
 		
 		<%

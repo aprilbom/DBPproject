@@ -4,18 +4,6 @@
 <head>
 <title>수강학생 조회</title>
 <style>
-ul{text-align: center; color:#ffffff;}
-ul li {display:inline-block; margin-right: 60px; color:#ffffff;}
-ul li:LAST-CHILD{ margin-right: 0;}
-nav{
-margin-top:100px;
-padding:1px 0;
-background-color:#0d0d5b;
-border-top: 1px solid #0d0d5b;
-border-bottom: 1px solid #0d0d5b;
-
-color:#ffffff;
-
 }
 a:hover {
  color:#ffffff;
@@ -26,20 +14,21 @@ margin-top:70px;
 border:none;
 border-collapse: collapse;
 }
-tr, td{ border:1px solid black;
+tr, td{ border:1px solid #8C8CF5;
 border-collapse: collapse;
 }
 th{
 color: white;
-background-color: #0d0d5b;
+background-color: #8C8CF5;
 
 }
 </style>
 </head>
 <body>
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+     <div class="w-100">
+       <h2 class="mb-5">My Student</h2>
 	<%@ include file="top_prof.jsp"%>
-	&nbsp;
-	<h3 style="text-align: center;">수강학생 조회</h3>
 	<% if (session_id==null) {
 		response.sendRedirect("login.jsp");
 		return;
@@ -52,7 +41,7 @@ background-color: #0d0d5b;
 	
 	<form id="my_form" action="select_search_stu_prof.jsp" method="post">
 	
-	<form method="post" action = "select_search_stu_prof.jsp"><div align="center">
+	<form method="post" action = "select_search_stu_prof.jsp"><div>
 		<td style="border: none;">과목번호 <input type="text" id="coursenum" name="coursenum" value=<%=coursenum%>></td>
 		<td style="border: none;"><input type="submit" value="조회" style=" border-color: black; color: black; top:3px; radius: 4px;
 		cursor: pointer;  width: 10%;
@@ -62,13 +51,13 @@ background-color: #0d0d5b;
 	</form>
 
 	
-	<table height="100px" width="75%" align="center" border>
+	<table height="100px" width="75%"  border>
 		<tr>
-			<th>학번</th>
-			<th>이름</th>
-			<th>학과</th>
-			<th>학년</th>
-			<th>이메일</th>
+			<th style = "text-align : center">학번</th>
+			<th style = "text-align : center">이름</th>
+			<th style = "text-align : center">학과</th>
+			<th style = "text-align : center">학년</th>
+			<th style = "text-align : center">이메일</th>
 		</tr>
 		<%
 		
@@ -159,7 +148,7 @@ background-color: #0d0d5b;
 		%>
 				
 			
-			<table width="75%" height="15%" align="center" style="border: none; ">
+			<table width="75%" height="15%"  style="border: none; ">
 			<tr style="border: none;"><td style="border: none;">
 			<%=coursename%> 수강생 조회
 			</td></tr>
