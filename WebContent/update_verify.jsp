@@ -6,11 +6,10 @@
 <title>수강신청 사용자 정보 수정</title>
 </head>
 <body>
-<%@ include file="top.jsp" %>
-
 <%
+String session_id= (String)session.getAttribute("userID");
 if (session_id==null) {
-	response.sendRedirect("login.jsp");  
+   response.sendRedirect("login.jsp");  
 }
 %>
 
