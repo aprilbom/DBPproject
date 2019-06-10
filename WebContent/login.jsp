@@ -67,6 +67,8 @@
         </h1>
         <div class="subheading mb-5">Sookmyung Women's University enrollment application system.</div>
         
+        <div><b>로그인 후 이용하세요.</b></div>
+        
         <div align = "left">
         <table width="75%" align="left" >
 		<form method="post" action="login_verify.jsp" >

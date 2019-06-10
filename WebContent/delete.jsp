@@ -45,7 +45,7 @@ button {
 <%@ include file="top.jsp" %>
 <%
 if (session_id==null) {
-	response.sendRedirect("index.html");  
+	response.sendRedirect("login.jsp"); 
 	return;
 }
 %>
