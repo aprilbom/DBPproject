@@ -1,13 +1,13 @@
 <%@ page contentType="text/html; charset=EUC-KR" %>
 <%@ page import="java.sql.*" %>
 
-<html><head><title>정보 수정</title>
+<html><head><title>수강신청 입력</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>정보 수정</title>
+  <title>Resume - Start Bootstrap Theme</title>
 
 <style>
 }
@@ -118,28 +118,21 @@ String s_addr = rs.getString("s_addr");
 			<th > Address </th>
 			<td><%=s_addr%></td>
 		</tr>	
-		
 		<tr>
-			
 			<td colspan="2" style="border-style: none;"><a href="update_change.jsp" ><button type="button" >수정하기</button></a></td>
 		</tr>
 		</table>
 		</form>
-		
+	</div>
+</section>
 		<%
 		stmt.close();
 		myConn.close();
 		%>
-        
 
 </body>
-</div>
-</section>
+
  </html>
-
-
-<style>
-
 
 
 

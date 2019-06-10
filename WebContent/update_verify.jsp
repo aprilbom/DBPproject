@@ -6,8 +6,6 @@
 <title>수강신청 사용자 정보 수정</title>
 </head>
 <body>
-<%@ include file="top.jsp" %> 
-<h3 style="text-align: center;">수강신청 사용자 정보 수정</h3>
 
 <%
 if (session_id==null) {
@@ -68,29 +66,29 @@ if(prof == 1) {
 
 <%}
 } catch(SQLException ex) {
-	String sMessage;
-	if (ex.getErrorCode() == 20002) {
-		sMessage="암호는 4자리 이상이어야 합니다"; %>
-		<script>
-		alert("<%=sMessage%>"); 
-		location.href="update_change.jsp";
-		</script>
+String sMessage;
+if (ex.getErrorCode() == 20002) {
+	sMessage="암호는 4자리 이상이어야 합니다"; %>
+	<script>
+	alert("<%=sMessage%>"); 
+	location.href="update_change.jsp";
+	</script>
+<%
+}else if (ex.getErrorCode() == 20003) { 
+	sMessage="암호에 공란은 입력되지않습니다."; %>
+	<script>
+	alert("<%=sMessage%>"); 
+	location.href="update_change.jsp"; 
+	</script>
 	<%
-	}else if (ex.getErrorCode() == 20003) { 
-		sMessage="암호에 공란은 입력되지않습니다."; %>
-		<script>
-		alert("<%=sMessage%>"); 
-		location.href="update_change.jsp"; 
-		</script>
-		<%
-	}else {
-		sMessage="잠시 후 다시 시도하십시오"; %>
-		<script>
-		alert("<%=sMessage%>"); 
-		location.href="update_change.jsp"; 
-		</script>
-		<%
-	}
+}else {
+	sMessage="잠시 후 다시 시도하십시오"; %>
+	<script>
+	alert("<%=sMessage%>"); 
+	location.href="update_change.jsp"; 
+	</script>
+	<%
+}
 }
 %> 
 

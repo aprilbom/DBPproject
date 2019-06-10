@@ -4,18 +4,6 @@
 <head>
 <title> 개설 강의 조회</title>
 <style>
-ul{text-align: center; color:#ffffff;}
-ul li {display:inline-block; margin-right: 60px; color:#ffffff;}
-ul li:LAST-CHILD{ margin-right: 0;}
-nav{
-margin-top:100px;
-padding:1px 0;
-background-color:#0d0d5b;
-border-top: 1px solid #0d0d5b;
-border-bottom: 1px solid #0d0d5b;
-
-color:#ffffff;
-
 }
 a:hover {
  color:#ffffff;
@@ -26,20 +14,21 @@ margin-top:70px;
 border:none;
 border-collapse: collapse;
 }
-tr, td{ border:1px solid black;
+tr, td{ border:1px solid #8C8CF5;
 border-collapse: collapse;
 }
 th{
 color: white;
-background-color: #0d0d5b;
+background-color: #8C8CF5;
 
 }
 </style>
 </head>
 <body>
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+     <div class="w-100">
+       <h2 class="mb-5">Select Class</h2>
 	<%@ include file="top_prof.jsp"%>
-	&nbsp;
-	<h3 style="text-align: center;">개설 강의 조회</h3>
 	<%
 		if (session_id == null)
 			response.sendRedirect("login.jsp");
@@ -51,14 +40,14 @@ background-color: #0d0d5b;
 			<br>
 			<br>
 			<tr>
-				<th>과목번호</th>
-				<th>분반</th>
-				<th>과목명</th>
-				<th>강의실</th>
-				<th>시간</th>
-				<th>학점</th>
-				<th>교수명</th>
-				<th>수강삭제</th>
+				<th style = "text-align:center">과목번호</th>
+				<th style = "text-align:center">분반</th>
+				<th style = "text-align:center">과목명</th>
+				<th style = "text-align:center">강의실</th>
+				<th style = "text-align:center">시간</th>
+				<th style = "text-align:center">학점</th>
+				<th style = "text-align:center">교수명</th>
+				<th style = "text-align:center">수강삭제</th>
 			</tr>
 			<%
 				

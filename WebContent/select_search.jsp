@@ -58,13 +58,13 @@ button {
 			<br>
 			<br>
 			<tr>
-		<th style="background-color: #8C8CF5; text-align: center;">과목번호</th>
-		<th style="background-color: #8C8CF5; text-align: center;">과목명</th>
-		<th style="background-color: #8C8CF5; text-align: center;">분반</th>
-		<th style="background-color: #8C8CF5; text-align: center;">강의실</th>
-		<th style="background-color: #8C8CF5; text-align: center;">시간</th>
-		<th style="background-color: #8C8CF5; text-align: center;">학점</th>
-		<th style="background-color: #8C8CF5; text-align: center;">교수명</th>
+				<th style="text-align : center;">과목번호</th>
+				<th style="text-align : center;">분반</th>
+				<th style="text-align : center;">과목명</th>
+				<th style="text-align : center;">강의실</th>
+				<th style="text-align : center;">시간</th>
+				<th style="text-align : center;">학점</th>
+				<th style="text-align : center;">교수명</th>
 			</tr>
 			<%
 				

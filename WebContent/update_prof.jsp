@@ -5,19 +5,30 @@
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>강사 정보 수정</title>
 <style>
-ul{text-align: center; color:#ffffff;}
-ul li {display:inline-block; margin-right: 60px; color:#ffffff;}
-ul li:LAST-CHILD{ margin-right: 0;}
-nav{
-margin-top:100px;
-padding:1px 0;
-background-color:#0d0d5b;
-border-top: 1px solid #0d0d5b;
-border-bottom: 1px solid #0d0d5b;
-
-color:#ffffff;
 
 }
+
+a:hover {
+ color:#ffffff;
+ border-bottom:1px solid black;
+}
+table{
+	margin-top:80px;
+	border: 0px solid #8C8CF5;
+	text-align: center;
+
+	}
+	
+th{
+	background-color:  #8C8CF5;
+	color:white;
+	
+	}
+	td{
+	border:1px solid #8C8CF5;
+	border-collapse: collapse;
+	
+	}
  button {
     width: 50%;
     
@@ -31,27 +42,6 @@ color:#ffffff;
     cursor: pointer;
     align:center;
 }
-a:hover {
- color:#ffffff;
- border-bottom:1px solid black;
-}
-table{
-	margin-top:80px;
-	border: 0px solid #0d0d5b;
-	text-align: center;
-
-	}
-	
-th{
-	background-color:  #0d0d5b;
-	color:white;
-	
-	}
-	td{
-	border:1px solid #0d0d5b;
-	border-collapse: collapse;
-	
-	}
 
 </style>
 </head>
@@ -59,9 +49,10 @@ th{
 <body>
 <%@ include file="top_prof.jsp" %> 
 
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+     <div class="w-100">
+       <h2 class="mb-5">Modify</h2>
 
-&nbsp;
-<h3 style="text-align: center;">강사 정보</h3>
 
 <%
 if (session_id==null) {
@@ -102,7 +93,7 @@ String p_email = rs.getString("p_email");
 &nbsp;
  
 <form method="post" action="update_change_prof.jsp">
-<table width="50%" height="40%" align="center">
+<table width="50%" height="40%">
 <tr>
 	<th> ID </th>
 	<td><%=session_id%></td>
@@ -129,7 +120,8 @@ String p_email = rs.getString("p_email");
 </tr>
 </table>
 </form>
-
+</div>
+</section>
 <%
 stmt.close();
 myConn.close();

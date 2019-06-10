@@ -22,7 +22,8 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" background="C:\apache-tomcat-7\webapps\ROOT\dbproject\WebContent\school.jpg">
+<%@ include file="top.jsp" %>
 
   <div class="container-fluid p-0">
 
@@ -31,10 +32,9 @@
         <h1 class="mb-0">Welecome To
           <span class="text-primary">SMU</span>
         </h1>
-        <div class="subheading mb-5">Sookmyung Women's University enrollment application system.
-        </div>		
-		<body background="C:\apache-tomcat-7\webapps\ROOT\dbproject\WebContent\school.jpg" >
-		<%@ include file="top.jsp" %>
+        
+        <div class="subheading mb-5">Sookmyung Women's University enrollment application system.</div>
+		
 		<table width="100%"  style="padding-top:20px;  text-align: center;">
 		<% if (session_id!= null) { %>
 		<tr>
@@ -48,10 +48,9 @@
 		}
 		%>
 		</table>
-		</body>
-        </div>
       </div>
     </section>
-    </head>
+    </div>
+</body>
 
 </html>

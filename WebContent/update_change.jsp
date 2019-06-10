@@ -23,7 +23,6 @@
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
   
-
 <style>
 }
 a:hover {
@@ -149,16 +148,15 @@ mySQL2 = "update student set s_pwd = '" + s_pwd + "' s_tel = '" + s_tel + "' whe
 	</tr>
 	</table>
 	</form>
-	
+	</div>
+</section>
 	<%
 	stmt.close();
 	myConn.close();
 	%>
 	
 
-</div>
-</section>
 </body>
-	
+
 </html>
 
