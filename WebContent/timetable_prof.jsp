@@ -1,84 +1,80 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<%@ page import="java.sql.*"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<%@ page contentType="text/html; charset=EUC-KR" %>
+<%@ page import="java.sql.*" %>
+
+<html><head><title>수강신청 입력</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
 <title>시간표</title>
+
+
 <style>
-#container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-ul{text-align: center; color:#ffffff;}
-ul li {display:inline-block; margin-right: 60px; color:#ffffff;}
-ul li:LAST-CHILD{ margin-right: 0;}
-nav{
-margin-top:100px;
-padding:1px 0;
-background-color:#0d0d5b;
-border-top: 1px solid #0d0d5b;
-border-bottom: 1px solid #0d0d5b;
-color:#ffffff;
-}
+
+
 a:hover {
  color:#ffffff;
  border-bottom:1px solid black;
 }
-input[type=submit] {
-    width: 50%;
-    
-    font-size:20px;
-    border-color: #0d0d5b;
-    color: #0d0d5b;
-    background-color:white;
-    margin-top:10px;
-    padding-top:3px;
-    border-radius: 4px;
-    cursor: pointer;
-    align:center;
-}
+
 table {
    width: 750px;
    margin-left: auto;
    margin-right: auto;
    border: 0px solid #0d0d5b;
-      text-align: center;
+   text-align: center;
 }
+
+
 .table_style1{
    width: 620px;
    margin-top: 20px;
    text-align: center;
+   border-color: #ffffff;
 }
-button { width: 80px; height: 25px; }
-div{
-	font-size:12px;
-   	border: 1px solid;
-   	text-align: center;
-}
+
 .schedule {
    position: relative; 
    width: 620px; 
    margin-left: auto;
    margin-right: auto;
    border-color: #D8D8D8;
+   font-size:12px;
 }
 .time{
    width:20px;
    height:80px;
    border-color: #D8D8D8;
 }
+
 .course{
    width: 120px;
    position: absolute;
    border-color: #D8D8D8;
+   text-align: center;
 }
+#container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #ffffff;
+}
+
 </style>
 </head>
+
 <body>
 <%@ include file="top_prof.jsp" %>
+
+<%
+if (session_id==null) {
+   response.sendRedirect("index.html");
+   %><script>alert("로그인 후 이용하세요");</script><%
+   return;
+}
+%>
+
 <%!
 public int getDayValue(String str){
    if(str.equals("월"))
@@ -94,9 +90,13 @@ public int getDayValue(String str){
    else return -1;
 }
 %>
+
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+<div class="w-100">
+  <h2 class="mb-5">Timetable</h2>
+  
+  
 <% 
-if(session_id == null)
-   response.sendRedirect("login.jsp");
 
 Connection myConn = null;
 Statement stmt = null;
@@ -230,6 +230,7 @@ myResultSet = stmt.executeQuery(mySQL);
 <table>
    <tr><td width= "65%"></td><td>총 개설과목: <%= totalEnrolledClass %></td><td>총 개설학점: <%= totalEnrolledUnit %></td></tr>
 </table>
-
+</div>
+</section>
 </body>
 </html>
