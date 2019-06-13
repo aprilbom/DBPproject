@@ -20,9 +20,9 @@ margin-top:40px;
 border:none;
 border-collapse: collapse;
 font-family: 'Nanum Gothic', sans-serif;
-
 }
-tr, td{ border:1px solid #8C8CF5;
+tr, td{
+border:1px solid #8C8CF5;
 border-collapse: collapse;
 font-family: 'Nanum Gothic', sans-serif;
 font-size:13px;
@@ -34,9 +34,7 @@ color: white;
 background-color: #8C8CF5;
 font-family: 'Nanum Gothic', sans-serif;
 font-size:13px;
-
 padding:10px;
-
 }
 button {
     width: 70%;
