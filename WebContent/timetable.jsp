@@ -54,6 +54,19 @@ table {
    align-items: center;
    color: #ffffff;
 }
+button{
+	background:#FFFFCC;
+	color:#444444;
+	border:none;
+	height:25px;
+	font-size:14px;
+	padding:0 0.5em;
+	cursor:pointer;
+	transition:800ms ease all;
+	outline:none;
+	align:center;
+	font-family: 'Nanum Gothic', sans-serif;
+}
 
 </style>
 </head>
@@ -137,17 +150,17 @@ myResultSet = stmt.executeQuery(mySQL);
 %>
 
 
-<table width="50%" align="center" style="border: none; ">
-         <tr style="border: none;" >
-            <td style="border: none;"><input type="text" id="nYear" name="nYear" value=<%=nYear%> /> 년도</td>
-            <td style="border: none;"><input type="text" id="nSemester" name="nSemester" value=<%=nSemester%> />학기</td>
-            <td style="border: none;"><input type="submit" value="조회" style=" border-color: #8C8CF5; color: black; padding-top:3px; border-radius: 4px;
-          cursor: pointer;  width: 70%;
-          font-size:15px;
-          align:center;"/></td>
-         </tr>
-         </table>
-
+<table id=timetable align="center" class="table_style1">
+   <tr><td><form method="post" action="timetable_prof.jsp">
+   학년도: <select name="year" id="yearSelect">
+               <option value="2019">2019학년도</option>
+               <option value="2018">2018학년도</option>
+               <option value="2017">2017학년도</option>
+               <option value="2016">2016학년도</option></select>
+      학기:   <select name="semester" id="semesterSelect" style="width:80px;"><option value="1">1학기</option>
+                     <option value="2">2학기</option></select>
+        <button>검색</button></form></td></tr>
+</table>
 
 <table border= "1" class="table_style1">
    <tr><td width="20px"></td><td>월</td><td>화</td><td>수</td><td>목</td><td>금</td></tr>

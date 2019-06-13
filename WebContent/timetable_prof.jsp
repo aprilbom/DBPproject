@@ -9,9 +9,7 @@
 
 <title>시간표</title>
 
-
 <style>
-
 table {
    width: 750px;
    margin-left: auto;
@@ -19,7 +17,6 @@ table {
    border: 0px solid #0d0d5b;
    text-align: center;
 }
-
 
 .table_style1{
    width: 620px;
@@ -53,6 +50,19 @@ table {
    justify-content: center;
    align-items: center;
    color: #ffffff;
+}
+button{
+	background:#FFFFCC;
+	color:#444444;
+	border:none;
+	height:25px;
+	font-size:14px;
+	padding:0 0.5em;
+	cursor:pointer;
+	transition:800ms ease all;
+	outline:none;
+	align:center;
+	font-family: 'Nanum Gothic', sans-serif;
 }
 
 </style>
@@ -140,15 +150,15 @@ myResultSet = stmt.executeQuery(mySQL);
 %>
 <table id=timetable align="center" class="table_style1">
    <tr><td><form method="post" action="timetable_prof.jsp">
-   학년도: <select name="year" id="yearSelect"><option value="2014">2014학년도</option>
-               <option value="2015">2015학년도</option>
-               <option value="2016">2016학년도</option>
+   학년도: <select name="year" id="yearSelect">
+               <option value="2019">2019학년도</option>
+               <option value="2018">2018학년도</option>
                <option value="2017">2017학년도</option>
-               <option value="2017">2018학년도</option>
-               <option value="2018">2019학년도</option></select>
+               <option value="2016">2016학년도</option></select>
       학기:   <select name="semester" id="semesterSelect" style="width:80px;"><option value="1">1학기</option>
                      <option value="2">2학기</option></select>
-        <button>검색</button></form></td></tr></table>
+        <button>검색</button></form></td></tr>
+</table>
 <script>
    document.getElementById("yearSelect").value = <%= nYear %>;
    document.getElementById("semesterSelect").value = <%= nSemester %>;

@@ -13,17 +13,16 @@ a:hover {
 }
 
 input[type=submit] {
-    width: 50%;
-    
-    font-size:20px;
-    border-color: #0d0d5b;
-    color: #0d0d5b;
-    background-color:white;
-    margin-top:10px;
-    padding-top:3px;
-    border-radius: 4px;
-    cursor: pointer;
-    align:center;
+background:#FFFFCC;
+color:#444444;
+border:none;
+height:30px;
+padding:0 10em;
+cursor:pointer;
+transition:800ms ease all;
+outline:none;
+align:center;
+font-family: 'Nanum Gothic', sans-serif;
 }
 table{
    margin-top:80px;

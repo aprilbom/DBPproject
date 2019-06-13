@@ -31,7 +31,7 @@ font-size:13px;
 color : #444444;
 padding:10px;
 }
-.button {
+input[type=submit] {
 background:#FFFFCC;
 color:#444444;
 border:none;

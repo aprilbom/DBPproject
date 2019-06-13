@@ -58,8 +58,9 @@ button {
 	<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
         <h2>My Class</h2>
-		<form id="my_form" action="select_search.jsp" method="post"></form>
-	<table height="90px" width="75%"  border>
+		
+	<table height="90px" width="75%">
+		<tr>
 			<th style="text-align : center;">과목번호</th>
 			<th style="text-align : center;">분반</th>
 			<th style="text-align : center;">과목명</th>
@@ -132,12 +133,9 @@ button {
 			<td align="center"><%=c_credit%></td>
 			<td align="center"><%=p_name%></td>
 		</tr>
-		
-		
-		
 <%      
-		}
-		}
+				}
+			}
 			
 			
 			CallableStatement cstmt = myConn.prepareCall("{call SelectTimeTable(?,?,?,?,?)}");
@@ -153,14 +151,13 @@ button {
 				%>
 				
 				
-			<table width="75%" height="15%"  style="border: none; ">
-			<tr style="border: none; font-family: 'Nanum Gothic', sans-serif; font-size:13px"><td style="border: none;">
-			<b><%=nYear%></b>년도 <b><%=nSemester%></b>학기 수강조회
-			</td></tr>
+			<table width="75%" height="15%">
+			<tr style="border: none; font-family: 'Nanum Gothic', sans-serif; font-size:13px">
+				<td style="border: none;"><b><%=nYear%></b>년도 <b><%=nSemester%></b>학기 수강조회</td>
+			</tr>
 			<tr style="border: none; font-family: 'Nanum Gothic', sans-serif; font-size:13px">
 				<td style="border: none;">● 총 <b><%=result1%></b> 과목을 신청했습니다.</td>
 			</tr>
-			
 			<tr style="border: none;font-family: 'Nanum Gothic', sans-serif; font-size:13px">
 				<td style="border: none;">● 총 <b><%=result2%></b> 학점을 신청했습니다.</td>
 			</tr>
@@ -180,7 +177,9 @@ button {
 					}
 			}
 		%>
-</form>
+
 	</table>
+	</div>
+	</section>
 </body>
 </html>

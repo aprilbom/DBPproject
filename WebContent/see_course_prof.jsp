@@ -59,7 +59,7 @@ button {
 	%>
 	<form id="my_form" action="see_course_search_prof.jsp" method="post">
 	
-	<table height="100px" width="75%" border>
+	<table height="100px" width="75%">
 		<tr>
 			<th style = "text-align:center">과목번호</th>
 			<th style = "text-align:center">분반</th>
