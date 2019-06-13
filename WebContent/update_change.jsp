@@ -2,7 +2,7 @@
 <%@ page import="java.sql.*" %>
 <html>
 <head>
-<title>수강신청 사용자 정보 수정</title>
+<title>학생 정보 수정</title>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <style>
 }

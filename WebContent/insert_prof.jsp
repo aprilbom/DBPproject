@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>강의조회</title>
+<title>강의 개설</title>
 <style>
 }
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 

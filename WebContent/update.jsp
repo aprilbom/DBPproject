@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=EUC-KR" %>
 <%@ page import="java.sql.*" %>
-
-<html><head><title>수강신청 입력</title>
+<html><head>
+<title>학생 정보 수정</title>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 
 <style>

@@ -1,13 +1,11 @@
 <%@ page contentType="text/html; charset=EUC-KR" %>
 <%@ page import="java.sql.*" %>
 
-<html><head><title>수강신청 입력</title>
+<html><head><title>시간표</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="">
 <meta name="author" content="">
-
-<title>시간표</title>
 
 <style>
 table {
