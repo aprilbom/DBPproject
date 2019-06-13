@@ -17,7 +17,6 @@ border: 0px solid #0d0d5b;
 text-align: center;
 font-family: 'Nanum Gothic', sans-serif;
 }
-	
 th{
 background-color:  #8C8CF5;
 color:white;
@@ -32,12 +31,11 @@ font-size:13px;
 color : #444444;
 padding:10px;
 }
-button {
+input[type=submit] {
 background:#FFFFCC;
 color:#444444;
 border:none;
 height:30px;
-font-size:1.6em;
 padding:0 10em;
 cursor:pointer;
 transition:800ms ease all;
@@ -45,6 +43,7 @@ outline:none;
 align:center;
 font-family: 'Nanum Gothic', sans-serif;
 }
+
 
 </style>
 </head>
@@ -94,7 +93,7 @@ String p_email = rs.getString("p_email");
 &nbsp;
  
 <form method="post" action="update_change_prof.jsp">
-<table width="50%" height="40%">
+<table width="50%" height="40%"><col width="120">
 <tr>
 	<th> ID </th>
 	<td><%=session_id%></td>
@@ -117,7 +116,7 @@ String p_email = rs.getString("p_email");
 </tr>	
 
 <tr>
-	<td colspan="2" style="border-style: none;"><a href="update_change_prof.jsp" ><button type="button" >강사 정보 수정</button></a></td>
+	<td colspan="2" style="border-style: none;"><input type="submit" value="수정"></td>
 </tr>
 </table>
 </form>

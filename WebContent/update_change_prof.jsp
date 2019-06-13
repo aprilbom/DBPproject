@@ -11,64 +11,54 @@ a:hover {
  color:#ffffff;
  border-bottom:1px solid black;
 }
-
-input[type=submit] {
-    width: 50%;
-    font-family: 'Nanum Gothic', sans-serif;
-	font-size:13px;
-    font-size:20px;
-    border-color: #0d0d5b;
-    color: #0d0d5b;
-    background-color:white;
-    margin-top:10px;
-    padding-top:3px;
-    border-radius: 4px;
-    cursor: pointer;
-    align:center;
-}
 table{
-   margin-top:80px;
-   border: 0px solid #8C8CF5;
-   text-align: center;
-   }
-   
-th{
-   background-color:  #8C8CF5;
-   color:white;
-   font-family: 'Nanum Gothic', sans-serif;
-   font-size:13px;
-   }
-   td{
-   border:1px solid #8C8CF5;
-   font-family: 'Nanum Gothic', sans-serif;
-   font-size:13px;
-   color:#444444;
-   }
-   
-#button {
-  background:#FFFFCC;
-  color:#444444;
-  border:none;
-  height:30px;
-  font-size:14px;
-  padding:0 8em;
-  cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
-  align:center;
-  font-family: 'Nanum Gothic', sans-serif;
+margin-top:80px;
+border: 0px solid #0d0d5b;
+text-align: center;
+font-family: 'Nanum Gothic', sans-serif;
 }
+th{
+background-color:  #8C8CF5;
+color:white;
+font-family: 'Nanum Gothic', sans-serif;
+font-size:13px;
+}
+td{
+border:1px solid #8C8CF5;
+border-collapse: collapse;
+font-family: 'Nanum Gothic', sans-serif;
+font-size:13px;
+color : #444444;
+padding:10px;
+}
+input[type=submit] {
+background:#FFFFCC;
+color:#444444;
+border:none;
+height:30px;
+padding:0 10em;
+cursor:pointer;
+transition:800ms ease all;
+outline:none;
+align:center;
+font-family: 'Nanum Gothic', sans-serif;
+}
+
 </style>
 </head>
+
 <body>
+<%@ include file="top_prof.jsp" %> 
+
 <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
      <div class="w-100">
        <h2 style="height: 150px;">Modify</h2>
-<%@ include file="top_prof.jsp" %> 
+
 
 <%
 if (session_id==null) {
-   response.sendRedirect("login.jsp");  
+	response.sendRedirect("login.jsp"); 
+	return;
 }
 %>
 
@@ -106,12 +96,8 @@ String p_email = rs.getString("p_email");
 mySQL2 = "update professor set p_pwd = '" + p_pwd + "' p_email = '" + p_email + "' where  p_id='" + session_id + "'" ;
 %>
 
-<!-- <h3 style="text-align: center;"><%=mySQL2%></h3>
-<h3 style="text-align: center;"><%=p_pwd%></h3> -->
-
 <form method="post" action="update_verify.jsp">
-<table width="50%" height="40%" align="center">
-<col width="120">
+<table width="50%" height="40%"><col width="120">
 <tr>
 	<th> ID </th>
 	<td><%=session_id%></td>

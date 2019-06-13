@@ -2,27 +2,8 @@
 <%@ page import="java.sql.*" %>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>수강신청 사용자 정보 수정</title>
-<html><head><title>수강신청 입력</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Resume - Start Bootstrap Theme</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
-  
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <style>
 }
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
@@ -31,48 +12,47 @@ a:hover {
  border-bottom:1px solid black;
 }
 table{
-	margin-top:80px;
-	border: 0px solid #0d0d5b;
-	text-align: center;
-	font-family: 'Nanum Gothic', sans-serif;
-
-	}
-	
+margin-top:80px;
+border: 0px solid #0d0d5b;
+text-align: center;
+font-family: 'Nanum Gothic', sans-serif;
+}
 th{
-	background-color:  #8C8CF5;
-	color:white;
-	font-family: 'Nanum Gothic', sans-serif;
-	font-size:13px;
-	
-	}
-	td{
-	border:1px solid #8C8CF5;
-	border-collapse: collapse;
-	font-family: 'Nanum Gothic', sans-serif;
-	font-size:13px;
-	color : #444444;
-	}
-button {
-  background:#FFFFCC;
-  color:#444444;
-  border:none;
-  height:30px;
-  font-size:1.6em;
-  padding:0 10em;
-  cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
-  align:center;
-  font-family: 'Nanum Gothic', sans-serif;
+background-color:  #8C8CF5;
+color:white;
+font-family: 'Nanum Gothic', sans-serif;
+font-size:13px;
+}
+td{
+border:1px solid #8C8CF5;
+border-collapse: collapse;
+font-family: 'Nanum Gothic', sans-serif;
+font-size:13px;
+color : #444444;
+padding:10px;
+}
+.button {
+background:#FFFFCC;
+color:#444444;
+border:none;
+height:30px;
+padding:0 10em;
+cursor:pointer;
+transition:800ms ease all;
+outline:none;
+align:center;
+font-family: 'Nanum Gothic', sans-serif;
 }
 
 </style>
 </head>
 <body>
-<%@ include file="top.jsp" %> 
+<%@ include file="top.jsp" %>
 <%
 if (session_id==null) {
-   response.sendRedirect("login.jsp");  
+	response.sendRedirect("login.jsp"); 
+	%><script>alert("로그인 후 이용하세요");</script><%
+	return;
 }
 %>
 
@@ -104,15 +84,10 @@ rs.next();
    String s_tel = rs.getString("s_tel");
    String s_addr = rs.getString("s_addr");
 %>
-
 &nbsp;
-
 <% 
 mySQL2 = "update student set s_pwd = '" + s_pwd + "' s_tel = '" + s_tel + "' where  s_id='" + session_id + "'" ;
 %>
-
-<!-- <h3 style="text-align: center;"><%=mySQL2%></h3>
-<h3 style="text-align: center;"><%=s_pwd%></h3> -->
 
 <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
@@ -150,7 +125,7 @@ mySQL2 = "update student set s_pwd = '" + s_pwd + "' s_tel = '" + s_tel + "' whe
 	</tr>
 	
 	<tr>
-	   <td colspan="2"><button>확인</button></td>
+	   <td colspan="2" style="border-style: none"><input type="submit" value="확인"></td>
 	</tr>
 
 	

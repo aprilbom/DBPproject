@@ -2,12 +2,7 @@
 <%@ page import="java.sql.*" %>
 
 <html><head><title>수강신청 입력</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Resume - Start Bootstrap Theme</title>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 
 <style>
 }
@@ -22,7 +17,6 @@ border: 0px solid #0d0d5b;
 text-align: center;
 font-family: 'Nanum Gothic', sans-serif;
 }
-	
 th{
 background-color:  #8C8CF5;
 color:white;
@@ -37,12 +31,11 @@ font-size:13px;
 color : #444444;
 padding:10px;
 }
-button {
+input[type=submit] {
 background:#FFFFCC;
 color:#444444;
 border:none;
 height:30px;
-font-size:1.6em;
 padding:0 10em;
 cursor:pointer;
 transition:800ms ease all;
@@ -80,9 +73,10 @@ stmt = myConn.createStatement();
 String userID =request.getParameter("userID");
 String userPassword =request.getParameter("userPassword");
 
+
 mySQL =  "select * from student where s_id='" + session_id + "'" ; 
 %>
-
+&nbsp;
 <%
 ResultSet rs = stmt.executeQuery(mySQL);
 rs.next();
@@ -98,7 +92,7 @@ String s_addr = rs.getString("s_addr");
       <div class="w-100">
         <h2 class="mb-5">Modify</h2>
         <form method="post" action="update_change.jsp">
-		<table width="50%" height="40%" >
+		<table width="50%" height="40%" ><col width="120">
 		<tr>
 			<th> ID </th>
 			<td><%=session_id%></td>
@@ -128,7 +122,7 @@ String s_addr = rs.getString("s_addr");
 			<td><%=s_addr%></td>
 		</tr>	
 		<tr>
-			<td colspan="2" style="border-style: none;"><a href="update_change.jsp" ><button type="button" >수정하기</button></a></td>
+			<td colspan="2" style="border-style: none;"><input type="submit" value="수정"></td>
 		</tr>
 		</table>
 		</form>
