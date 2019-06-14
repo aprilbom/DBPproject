@@ -116,11 +116,11 @@ th{
 		   <td><%=session_id%></td>
 		</tr>
 		<tr>
-		   <th> 과목 이름 </th>
+		   <th> 과목명 </th>
 		   <td><input type="text" name="coursename" id="coursename"></td>
 		</tr>
 		<tr>
-		   <th> 과목 코드 </th>
+		   <th> 과목번호 </th>
 		   <td><input type="text" name="courseid" id="courseid" ></td>
 		</tr>
 		<tr>
@@ -129,7 +129,7 @@ th{
 		</tr>
 		<tr>
 			<th> 학점 </th>
-		   <td><input type="text" name="coursecredit" id="coursecredit" ></td>
+		   <td><input type="text" name="coursecredit" id="coursecredit"></td>
 		</tr>
 		<tr>
 		   <th> 강의 요일 </th>

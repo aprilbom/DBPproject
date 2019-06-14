@@ -1,8 +1,8 @@
-drop table teach;
 drop table enroll;
 drop table student;
 drop table professor;
 drop table course;
+drop table open;
 
 CREATE TABLE student
 (
@@ -143,7 +143,7 @@ CREATE TABLE teach
 (
     p_id NUMBER(10),
     c_id NUMBER(10),
-    c_class NUMBER(1),
+    c_class NUMBER(2),
     t_year NUMBER(4),
     t_semester NUMBER(1),
     CONSTRAINT t_pk PRIMARY KEY (p_id, c_id, c_class, t_year, t_semester),

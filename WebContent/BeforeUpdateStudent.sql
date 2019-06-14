@@ -20,8 +20,8 @@ nLength := Length(:new.s_pwd);
 
 	EXCEPTION
 		WHEN underflow_length THEN
-			RAISE_APPLICATION_ERROR(-20002, '╬охё╢б 4юз╦╝ юл╩Сюл╬Н╬ъ гу╢о╢ы');
+			RAISE_APPLICATION_ERROR(-20002, 'Л∙■М≤╦К┼■ 4Л·░К╕╛ Л²╢Л┐│Л²╢Л√╢Л∙╪ М∙╘К▀┬К▀╓');
 		WHEN invalid_value THEN
-			RAISE_APPLICATION_ERROR(-20003, '╬охё©║ ╟Ь╤Ую╨ ют╥б╣гаЖ ╬й╫ю╢о╢ы.');
+			RAISE_APPLICATION_ERROR(-20003, 'Л∙■М≤╦Л≈░ ЙЁ╣К·─Л²─ Л·┘К═╔К░≤Л╖─ Л∙┼Л┼╣К▀┬К▀╓.');
 END;
 /

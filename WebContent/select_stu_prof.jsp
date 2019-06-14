@@ -110,8 +110,7 @@ input[type=submit] {
 			cstmt1.execute();
 			int nYear = cstmt1.getInt(1);
 			
-		 	
-		 	
+
 		 	mySQL3 = "{? = call Date2EnrollSemester(SYSDATE)}";
 			CallableStatement cstmt2 = myConn.prepareCall(mySQL3);
 			cstmt2.registerOutParameter(1,java.sql.Types.INTEGER);
@@ -127,6 +126,7 @@ input[type=submit] {
 					pid = myResultSet.getString("p_id");
 				}
 			}
+			System.out.println("coursename:"+coursename);
 			
 			mySQL5 = "select count(*) from enroll where c_id = '" + coursenum + "'";
 			myResultSet = stmt.executeQuery(mySQL5);

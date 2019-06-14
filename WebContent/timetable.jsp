@@ -148,7 +148,7 @@ myResultSet = stmt.executeQuery(mySQL);
 
 
 <table id=timetable align="center" class="table_style1">
-   <tr><td><form method="post" action="timetable_prof.jsp">
+   <tr><td><form method="post" action="timetable.jsp">
    학년도: <select name="year" id="yearSelect">
                <option value="2019">2019학년도</option>
                <option value="2018">2018학년도</option>

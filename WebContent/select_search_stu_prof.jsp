@@ -54,7 +54,8 @@ input[type=submit] {
 			response.sendRedirect("login.jsp");
    		String coursenum = request.getParameter("coursenum");
 		String value = "";
-		String pid = "";
+		int sessionid=Integer.parseInt(session_id);
+		int pid=0;
 		%>
 		
 		<form method="post" action = "select_search_stu_prof.jsp" id="my_form">
@@ -105,7 +106,7 @@ input[type=submit] {
 				if (myResultSet != null) {
 					while (myResultSet.next()) {
 						coursename = myResultSet.getString("c_name");
-						pid = myResultSet.getString("p_id");
+						pid = myResultSet.getInt("p_id");
 					}
 				}
 				
@@ -116,12 +117,12 @@ input[type=submit] {
 						result1 = myResultSet.getString("count(*)");
 					}
 				}
-				
-				if (pid.equals(session_id)){
+
+				if (pid==sessionid){
 					mySQL = "select s_id, s_name, s_major, s_grade, s_email, s_tel, s_addr from student where (s_id) IN (select s_id from enroll where c_id = '" + coursenum + "')";
 					myResultSet = stmt.executeQuery(mySQL);
 				}
-							
+
 				if (myResultSet != null) {
 					while (myResultSet.next()) {
 						int s_id = myResultSet.getInt("s_id");
@@ -131,8 +132,9 @@ input[type=submit] {
 						String s_email = myResultSet.getString("s_email");
 						String s_tel = myResultSet.getString("s_tel");
 						String s_addr = myResultSet.getString("s_addr");
-			%>
 
+			%>
+			
 			<tr>
 				<td align="center"><%=s_id%></td>
 				<td align="center"><%=s_name%></td>

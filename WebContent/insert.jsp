@@ -136,8 +136,8 @@ if (session_id==null) {
 		cstmt2.execute();
 		int nSemester = cstmt2.getInt(1);
 		
-		mySQL = "select c_id, c_name, c_class, c_classroom, c_max, c_day, c_credit, c_time, p_name from course c, professor p where c.p_id = p.p_id and (c_id, c_class) IN (select c_id, c_class from teach where t_year ="
-		      + nYear + " and t_semester =" + nSemester + ")";
+		mySQL = "select c_id, c_name, c_class, c_classroom, c_max, c_day, c_credit, c_time, p_name from course c, professor p where c.p_id = p.p_id and (c_id, c_class) IN (select c_id, c_class from open where e_year ="
+		      + nYear + " and e_semester =" + nSemester + ")";
 		mySQL2 = "select c_id, c_name, c_class, c_day, c_time, p_name from course c, professor p where c.p_id = p.p_id and c.c_id not in (select c_id from enroll where s_id='" + session_id + "')"; 
 		%>
 		
