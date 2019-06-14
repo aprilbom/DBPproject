@@ -1,7 +1,7 @@
 CREATE TABLE student
 (
     s_id NUMBER(10),
-    s_pwd VARCHAR2(10) not null,
+    s_pwd VARCHAR2(20) not null,
     s_name VARCHAR2(50) not null,
     s_addr VARCHAR2(200),
     s_email VARCHAR2(100),
@@ -27,8 +27,8 @@ INSERT INTO student(s_id, s_pwd, s_name, s_addr, s_email, s_tel, s_grade, s_majo
 ('1411543', 'ino08', '배인희', '서울시 송파구 올림픽로 435 파크타운 205동 104호', 'ino23@gmail.com', '010-3831-3652', 2, '무용과');
 INSERT INTO student(s_id, s_pwd, s_name, s_addr, s_email, s_tel, s_grade, s_major) VALUES
 ('1543211', 'igogo', '나고은', '인천광역시 남동구 호구포로 803 롯데케슬 102동 501호', 'megogo@gmail.com', '010-9988-1122', 1, '미디어학부');
-INSERT INTO student(s_id, s_pwd, s_name, s_addr, s_email, s_tel, s_grade, s_major) VALUES
-('1900006', 'smu', '김숙명', '서울특별시 용산구 청파로47길 100', 'smu@sookmyung.ac.kr', '010-1906-1615', 1, '기초공학부');
+
+INSERT INTO student(s_id, s_pwd, s_name, s_addr, s_email, s_tel, s_grade, s_major) VALUES ('1906', 'smu', '김숙명', '서울특별시 용산구 청파로47길 100', 'smu@sookmyung.ac.kr', '010-1906-1615', 1, '소프트웨어학부');
 
 
 CREATE TABLE course
@@ -37,9 +37,9 @@ CREATE TABLE course
     c_class NUMBER(1),
     c_name VARCHAR2(50),
     c_credit NUMBER(1),
-    c_time VARCHAR2(20),
-    c_day VARCHAR2(20),
-    c_classroom VARCHAR2(50),
+    c_time VARCHAR2(100),
+    c_day VARCHAR2(100),
+    c_classroom VARCHAR2(100),
     c_max NUMBER(3),
     p_id NUMBER(10),
     CONSTRAINT c_pk PRIMARY KEY (c_id, c_class));
@@ -91,7 +91,7 @@ CREATE TABLE open
 (
     p_id NUMBER(10),
     c_id NUMBER(10),
-    c_class NUMBER(10),
+    c_class NUMBER(1),
     e_year NUMBER(4),
     e_semester NUMBER(1),
     CONSTRAINT o_p_id_fk FOREIGN KEY (p_id) REFERENCES professor (p_id),
@@ -139,8 +139,8 @@ INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1316803', '
 INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1316803', '10080', 1, 2019, 1);
 INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1316803', '10015', 1, 2019, 1);
 
-INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1900006', '10072', 1, 2019, 1);
-INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1900006', '10045', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1906', '10072', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1906', '10045', 1, 2019, 1);
 
 
 CREATE TABLE test

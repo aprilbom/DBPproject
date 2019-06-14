@@ -15,9 +15,6 @@ nCnt NUMBER;
 nTeachMax NUMBER;
 BEGIN
 result := '';
-DBMS_OUTPUT.put_line('#');
-DBMS_OUTPUT.put_line(sStudentId || '학생 아이디 ' || sCourseId ||
-'학생 수업 ' || TO_CHAR(nCourseIdNo) || '학생 수강번호 조회'); 
 
 nYear := Date2EnrollYear(SYSDATE);
 nSemester := Date2EnrollSemester(SYSDATE);
