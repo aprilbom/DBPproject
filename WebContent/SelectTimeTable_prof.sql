@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE SelectTimeTable
+CREATE OR REPLACE PROCEDURE SelectTimeTableprof
 (profId IN NUMBER,
  nYear IN NUMBER,
  nSemester IN NUMBER,

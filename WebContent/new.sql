@@ -1,9 +1,3 @@
-drop table enroll;
-drop table student;
-drop table professor;
-drop table course;
-drop table open;
-
 CREATE TABLE student
 (
     s_id NUMBER(10),
@@ -33,6 +27,8 @@ INSERT INTO student(s_id, s_pwd, s_name, s_addr, s_email, s_tel, s_grade, s_majo
 ('1411543', 'ino08', '배인희', '서울시 송파구 올림픽로 435 파크타운 205동 104호', 'ino23@gmail.com', '010-3831-3652', 2, '무용과');
 INSERT INTO student(s_id, s_pwd, s_name, s_addr, s_email, s_tel, s_grade, s_major) VALUES
 ('1543211', 'igogo', '나고은', '인천광역시 남동구 호구포로 803 롯데케슬 102동 501호', 'megogo@gmail.com', '010-9988-1122', 1, '미디어학부');
+INSERT INTO student(s_id, s_pwd, s_name, s_addr, s_email, s_tel, s_grade, s_major) VALUES
+('1900006', 'smu', '김숙명', '서울특별시 용산구 청파로47길 100', 'smu@sookmyung.ac.kr', '010-1906-1615', 1, '기초공학부');
 
 
 CREATE TABLE course
@@ -55,11 +51,14 @@ INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, 
 INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, c_max, p_id) VALUES ('10070', 1, '프로그래밍언어', 3, '12:00-13:15', '화,목', '명신관405', 60, '004535');
 INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, c_max, p_id) VALUES ('10075', 1, '디지털논리회로', 3, '13:30-14:45', '월,수', '명신관413', 55, '004585');
 INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, c_max, p_id) VALUES ('10080', 1, '운영체제', 3, '15:00-16:15', '월,수', '명신관413', 60, '004585');
-INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, c_max, p_id) VALUES ('10085', 1, '영상정보처리', 3, '09:00-10:15', '월,수', '명신관315', 50, '004575');
+INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, c_max, p_id) VALUES ('10085', 1, '영상정보처리', 3, '09:00-10:15', '월,수', '명신관315', 50, '004790');
 INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, c_max, p_id) VALUES ('10015', 1, '데이터사이언스개론', 3, '12:00-13:15', '화,목', '프라임관401', 70, '004590');
 INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, c_max, p_id) VALUES ('10072', 1, '데이터마이닝및분석', 3, '15:00-16:15', '화,목', '프라임관202', 70, '004590');
 INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, c_max, p_id) VALUES ('10099', 1, '사용자인터페이스', 3, '12:00-14:50', '금', '명신관408', 20, '004790');
 INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, c_max, p_id) VALUES ('10041', 1, '인공지능', 3, '09:00-10:15', '월,수', '명신관307', 40, '004990');
+INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, c_max, p_id) VALUES ('10001', 1, '프로그래밍개론', 3, '15:00-16:15', '화,목', '명신관409', 30, '004595');
+INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, c_max, p_id) VALUES ('10001', 2, '프로그래밍개론', 3, '13:30-14:45', '화,목', '명신관407', 30, '004555');
+INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, c_max, p_id) VALUES ('10101', 1, '네트워크보안', 3, '09:00-10:15', '화,목', '명신관201', 45, '004500');
 
 
 CREATE TABLE professor
@@ -99,21 +98,23 @@ CREATE TABLE open
     CONSTRAINT o_c_id_fk FOREIGN KEY (c_id, c_class) REFERENCES course (c_id, c_class)
 );
 
-INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('4580', '10045', 1, 2019, 1);
-INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('4500', '10050', 1, 2019, 1);
-INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('4525', '10055', 1, 2019, 1);
-INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('4545', '10365', 1, 2019, 1);
-INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('4535', '10070', 1, 2019, 1);
-INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('4585', '10075', 1, 2019, 1);
-INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('4585', '10080', 1, 2019, 1);
-INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('4575', '10085', 1, 2019, 1);
-INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('4590', '10015', 1, 2019, 1);
-INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('4595', '10060', 1, 2019, 1);
-INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('4790', '10099', 1, 2019, 1);
-INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('4990', '10041', 1, 2019, 1);
-INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('4590', '10072', 1, 2019, 1);
-
-
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004580', '10045', 1, 2019, 2);
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004580', '10045', 1, 2019, 1);
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004500', '10050', 1, 2019, 1);
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004525', '10055', 1, 2019, 1);
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004545', '10365', 1, 2019, 1);
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004535', '10070', 1, 2019, 1); 
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004585', '10075', 1, 2019, 1); 
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004585', '10080', 1, 2019, 1); 
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004790', '10085', 1, 2019, 2); 
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004590', '10015', 1, 2019, 1); 
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004590', '10015', 1, 2019, 2); 
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004590', '10072', 1, 2019, 1); 
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004790', '10099', 1, 2019, 2); 
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004990', '10041', 1, 2019, 1); 
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004595', '10001', 1, 2019, 1); 
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004555', '10001', 2, 2019, 1); 
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004500', '10101', 1, 2019, 2); 
 
 
 CREATE TABLE enroll
@@ -128,45 +129,19 @@ CREATE TABLE enroll
     CONSTRAINT e_c_id_fk FOREIGN KEY (c_id, c_class) REFERENCES  course (c_id, c_class)
 );
 
-INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1315842', '10055', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1315842', '10001', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1315842', '10041', 1, 2019, 1);
 INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1315842', '10050', 1, 2019, 1);
-INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1315842', '10045', 1, 2019, 1);
-INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1312334', '10055', 1, 2019, 1);
-INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1312334', '10085', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1312334', '10365', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1312334', '10041', 1, 2019, 1);
 INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1312334', '10075', 1, 2019, 1);
 INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1316803', '10070', 1, 2019, 1);
 INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1316803', '10080', 1, 2019, 1);
 INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1316803', '10015', 1, 2019, 1);
 
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1900006', '10072', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1900006', '10045', 1, 2019, 1);
 
-CREATE TABLE teach
-(
-    p_id NUMBER(10),
-    c_id NUMBER(10),
-    c_class NUMBER(2),
-    t_year NUMBER(4),
-    t_semester NUMBER(1),
-    CONSTRAINT t_pk PRIMARY KEY (p_id, c_id, c_class, t_year, t_semester),
-    CONSTRAINT p_id_fk FOREIGN KEY (p_id) REFERENCES professor (p_id),
-    CONSTRAINT t_c_id_fk FOREIGN KEY (c_id, c_class) REFERENCES  course (c_id, c_class));
-
-INSERT INTO teach(p_id, c_id, c_class, t_year, t_semester) VALUES ('004545', '10050', 1, 2019, 1); 
-INSERT INTO teach(p_id, c_id, c_class, t_year, t_semester) VALUES ('004575', '10055', 1, 2019, 1);
-INSERT INTO teach(p_id, c_id, c_class, t_year, t_semester) VALUES ('004555', '10045', 1, 2019, 1);
-INSERT INTO teach(p_id, c_id, c_class, t_year, t_semester) VALUES ('004595', '10060', 1, 2019, 1); 
-INSERT INTO teach(p_id, c_id, c_class, t_year, t_semester) VALUES ('004550', '10070', 1, 2019, 1); 
-INSERT INTO teach(p_id, c_id, c_class, t_year, t_semester) VALUES ('004575', '10085', 1, 2019, 1); 
-INSERT INTO teach(p_id, c_id, c_class, t_year, t_semester) VALUES ('004545', '10365', 1, 2019, 1);
-INSERT INTO teach(p_id, c_id, c_class, t_year, t_semester) VALUES ('004585', '10080', 1, 2019, 1); 
-INSERT INTO teach(p_id, c_id, c_class, t_year, t_semester) VALUES ('004590', '10015', 1, 2019, 1); 
-INSERT INTO teach(p_id, c_id, c_class, t_year, t_semester) VALUES ('004545', '10050', 1, 2019, 2); 
-INSERT INTO teach(p_id, c_id, c_class, t_year, t_semester) VALUES ('004575', '10055', 1, 2019, 2); 
-INSERT INTO teach(p_id, c_id, c_class, t_year, t_semester) VALUES ('004555', '10045', 1, 2019, 2);
-INSERT INTO teach(p_id, c_id, c_class, t_year, t_semester) VALUES ('004550', '10070', 1, 2019, 2); 
-INSERT INTO teach(p_id, c_id, c_class, t_year, t_semester) VALUES ('004575', '10085', 1, 2019, 2); 
-INSERT INTO teach(p_id, c_id, c_class, t_year, t_semester) VALUES ('004545', '10365', 1, 2019, 2);
-INSERT INTO teach(p_id, c_id, c_class, t_year, t_semester) VALUES ('004585', '10080', 1, 2019, 2); 
-INSERT INTO teach(p_id, c_id, c_class, t_year, t_semester) VALUES ('004590', '10015', 1, 2019, 2); 
 
 CREATE TABLE test
 (
