@@ -194,7 +194,7 @@ myResultSet = stmt.executeQuery(mySQL);
       int startTime = hr*4+min/15;
       hr = Integer.parseInt(c_time.substring(6, 8));
       min = Integer.parseInt(c_time.substring(9, 11));
-      System.out.println("hh" + hr + min + startTime);
+      
       if(endHr < hr)
          endHr = hr;
       int endTime = hr*4+min/15;

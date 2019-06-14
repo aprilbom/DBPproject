@@ -15,7 +15,8 @@ margin-top:70px;
 border:none;
 border-collapse: collapse;
 }
-tr, td{ border:1px solid #8C8CF5;
+tr, td{
+border:1px solid #8C8CF5;
 border-collapse: collapse;
 font-family: 'Nanum Gothic', sans-serif;
 font-size:13px;
