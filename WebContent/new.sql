@@ -12,21 +12,21 @@ CREATE TABLE student
 );
 
 INSERT INTO student(s_id, s_pwd, s_name, s_addr, s_email, s_tel, s_grade, s_major) VALUES
-('1312334', '1234', '신민아', '경기도 화성군 송산면 고성 5리 540-2', 'abcd@gmail.com', '010-4424-1121', 4, '컴퓨터과학과');
+('1612334', '1234', '신민아', '경기도 화성군 송산면 고성 5리 540-2', 'abcd@gmail.com', '010-4424-1121', 4, '컴퓨터과학과');
 INSERT INTO student(s_id, s_pwd, s_name, s_addr, s_email, s_tel, s_grade, s_major) VALUES
-('1311223', 'gogomi', '박지연', '서울시 마포구 공덕동 12-98 공덕오피스타 1103호', 'gogomi@naver.com', '010-1122-3344', 4, '멀티미디어학과');
+('1611223', 'gogomi', '박지연', '서울시 마포구 공덕동 12-98 공덕오피스타 1103호', 'gogomi@naver.com', '010-1122-3344', 4, '멀티미디어학과');
 INSERT INTO student(s_id, s_pwd, s_name, s_addr, s_email, s_tel, s_grade, s_major) VALUES
-('1315842', 'abc1234', '신혜정', '서울시 관안구 남부순환로248-56', 'shinsy11@naver.com', '010-7271-2808', 4, '컴퓨터과학과');
+('1515842', 'abc1234', '신혜정', '서울시 관안구 남부순환로248-56', 'shinsy11@naver.com', '010-7271-2808', 4, '컴퓨터과학과');
 INSERT INTO student(s_id, s_pwd, s_name, s_addr, s_email, s_tel, s_grade, s_major) VALUES
-('1412783', 'abcdefg', '김우진', '경기도 수원시 권선동 아이파크시티 103동 702호', 'woojin@gmail.com', '010-4244-1168', 3, '컴퓨터과학과');
+('1612783', 'abcdefg', '김우진', '경기도 수원시 권선동 아이파크시티 103동 702호', 'woojin@gmail.com', '010-4244-1168', 3, '컴퓨터과학과');
 INSERT INTO student(s_id, s_pwd, s_name, s_addr, s_email, s_tel, s_grade, s_major) VALUES
-('1545642', 'ab1234', '김지은', '서울시 영등포구 여의도동 540-2', 'micky@gmail.com', '010-4543-8767', 2, '멀티미디어학과');
+('1845642', 'ab1234', '김지은', '서울시 영등포구 여의도동 540-2', 'micky@gmail.com', '010-4543-8767', 2, '멀티미디어학과');
 INSERT INTO student(s_id, s_pwd, s_name, s_addr, s_email, s_tel, s_grade, s_major) VALUES
-('1316803', 'qwerty', '김지민', '서울시 송파구 가락로 6길 89 302호', 'hikoseom@naver.com', '010-4536-9879', 4, '컴퓨터과학과');
+('1516803', 'qwerty', '김지민', '서울시 송파구 가락로 6길 89 302호', 'hikoseom@naver.com', '010-4536-9879', 4, '컴퓨터과학과');
 INSERT INTO student(s_id, s_pwd, s_name, s_addr, s_email, s_tel, s_grade, s_major) VALUES
-('1411543', 'ino08', '배인희', '서울시 송파구 올림픽로 435 파크타운 205동 104호', 'ino23@gmail.com', '010-3831-3652', 2, '무용과');
+('1811543', 'ino08', '배인희', '서울시 송파구 올림픽로 435 파크타운 205동 104호', 'ino23@gmail.com', '010-3831-3652', 2, '무용과');
 INSERT INTO student(s_id, s_pwd, s_name, s_addr, s_email, s_tel, s_grade, s_major) VALUES
-('1543211', 'igogo', '나고은', '인천광역시 남동구 호구포로 803 롯데케슬 102동 501호', 'megogo@gmail.com', '010-9988-1122', 1, '미디어학부');
+('1943211', 'igogo', '나고은', '인천광역시 남동구 호구포로 803 롯데케슬 102동 501호', 'megogo@gmail.com', '010-9988-1122', 1, '미디어학부');
 
 INSERT INTO student(s_id, s_pwd, s_name, s_addr, s_email, s_tel, s_grade, s_major) VALUES ('1906', 'smu', '김숙명', '서울특별시 용산구 청파로47길 100', 'smu@sookmyung.ac.kr', '010-1906-1615', 1, '소프트웨어학부');
 
@@ -59,6 +59,7 @@ INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, 
 INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, c_max, p_id) VALUES ('10001', 1, '프로그래밍개론', 3, '15:00-16:15', '화,목', '명신관409', 30, '004595');
 INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, c_max, p_id) VALUES ('10001', 2, '프로그래밍개론', 3, '13:30-14:45', '화,목', '명신관407', 30, '004555');
 INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, c_max, p_id) VALUES ('10101', 1, '네트워크보안', 3, '09:00-10:15', '화,목', '명신관201', 45, '004500');
+INSERT INTO course(c_id, c_class, c_name, c_credit, c_time, c_day, c_classroom, c_max, p_id) VALUES ('10100', 1, '데이터베이스프로그래밍', 3, '13:30-14:45', '월,수', '명신관408', 2, '004100');
 
 
 CREATE TABLE professor
@@ -85,7 +86,7 @@ INSERT INTO professor(p_id, p_pwd, p_name, p_major, p_email) VALUES ('004525', '
 INSERT INTO professor(p_id, p_pwd, p_name, p_major, p_email) VALUES ('004500', 'yhpark', '박영훈', '컴퓨터과학과', 'yh.park@sm.ac.kr');
 INSERT INTO professor(p_id, p_pwd, p_name, p_major, p_email) VALUES ('004790', 'yjjeong', '정영주', '컴퓨터과학과', 'yjeong@sm.ac.kr');
 INSERT INTO professor(p_id, p_pwd, p_name, p_major, p_email) VALUES ('004990', 'hjchae', '채희준', '컴퓨터과학과', 'heechae@sm.ac.kr');
-
+INSERT INTO professor(p_id, p_pwd, p_name, p_major, p_email) VALUES ('004100', 'jhsim', '심준호', '컴퓨터과학과', 'jshim@sm.ac.kr');
 
 CREATE TABLE open
 (
@@ -99,7 +100,6 @@ CREATE TABLE open
 );
 
 INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004580', '10045', 1, 2019, 2);
-INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004580', '10045', 1, 2019, 1);
 INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004500', '10050', 1, 2019, 1);
 INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004525', '10055', 1, 2019, 1);
 INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004545', '10365', 1, 2019, 1);
@@ -115,7 +115,7 @@ INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004990', '100
 INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004595', '10001', 1, 2019, 1); 
 INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004555', '10001', 2, 2019, 1); 
 INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004500', '10101', 1, 2019, 2); 
-
+INSERT INTO open(p_id, c_id, c_class, e_year, e_semester) VALUES ('004100', '10100', 1, 2019, 1); 
 
 CREATE TABLE enroll
 (
@@ -129,16 +129,19 @@ CREATE TABLE enroll
     CONSTRAINT e_c_id_fk FOREIGN KEY (c_id, c_class) REFERENCES  course (c_id, c_class)
 );
 
-INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1315842', '10001', 1, 2019, 1);
-INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1315842', '10041', 1, 2019, 1);
-INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1315842', '10050', 1, 2019, 1);
-INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1312334', '10365', 1, 2019, 1);
-INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1312334', '10041', 1, 2019, 1);
-INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1312334', '10075', 1, 2019, 1);
-INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1316803', '10070', 1, 2019, 1);
-INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1316803', '10080', 1, 2019, 1);
-INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1316803', '10015', 1, 2019, 1);
-
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1515842', '10001', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1515842', '10041', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1515842', '10050', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1612334', '10365', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1612334', '10041', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1612334', '10075', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1516803', '10070', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1516803', '10080', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1516803', '10015', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1515842', '10080', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1811543', '10100', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1612334', '10100', 1, 2019, 1);
+INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1906', '10015', 1, 2019, 1);
 INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1906', '10072', 1, 2019, 1);
 INSERT INTO enroll(s_id, c_id, c_class, e_year, e_semester) VALUES ('1906', '10045', 1, 2019, 1);
 
@@ -148,8 +151,6 @@ CREATE TABLE test
     id NUMBER(10),
     name VARCHAR2(10));
 
-
 INSERT INTO test(id, name) VALUES ('1111', 'aaaa');
 INSERT INTO test(id, name) VALUES ('2222', 'bbbb');
 INSERT INTO test(id, name) VALUES ('3333', 'cccc');
-INSERT INTO test(id, name) VALUES ('4444', 'dddd');

@@ -40,7 +40,7 @@ END IF;
 SELECT COUNT(*)
 INTO nCnt
 FROM open
-WHERE p_id = profId and c_id = courseId and c_class = courseClass and e_year = nYear and e_semester = nSemester;
+WHERE c_id = courseId and c_class = courseClass and e_year = nYear and e_semester = nSemester;
 
 IF (nCnt > 0)
 THEN
