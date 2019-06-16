@@ -26,18 +26,18 @@ font-family: 'Nanum Gothic', sans-serif;
 }
 table{
    margin-top:80px;
-   border: 0px solid #000000;
+   border: 0px solid #3366CC;
    text-align: center;
    }
    
 th{
-   background-color:  #000000;
+   background-color:  #3366CC;
    color:white;
    font-family: 'Nanum Gothic', sans-serif;
    font-size:13px;
    }
    td{
-   border:1px solid #000000;
+   border:1px solid #3366CC;
    font-family: 'Nanum Gothic', sans-serif;
    font-size:13px;
    color:#444444;

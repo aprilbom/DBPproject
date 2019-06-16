@@ -33,10 +33,10 @@
         </h1>
         <div class="subheading mb-5">Sookmyung Women's University enrollment application system.</div>		
 		
-		<table width="100%"  style="padding-top:20px;  text-align: center;">
+		<table width="100%"  style="padding-top:20px; ">
 		<% if (session_id!= null) { %>
 		<tr>
-		<td><b><%=session_id%></b> 님 방문을 환영합니다.</td>
+		<td><b>교수 용 접속 / <%=session_id%></b> 님 방문을 환영합니다.</td>
 		</tr>
 		<% } else { %>
 		<tr>

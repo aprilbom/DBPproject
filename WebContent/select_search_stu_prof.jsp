@@ -16,7 +16,7 @@ border:none;
 border-collapse: collapse;
 }
 tr, td{
-border:1px solid #8C8CF5;
+border:1px solid #3366CC;
 border-collapse: collapse;
 font-family: 'Nanum Gothic', sans-serif;
 font-size:13px;
@@ -25,7 +25,7 @@ color:#444444;
 
 th{
 color: white;
-background-color: #8C8CF5;
+background-color: #3366CC;
 font-family: 'Nanum Gothic', sans-serif;
 font-size:13px;
 }

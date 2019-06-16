@@ -18,13 +18,13 @@ text-align: center;
 font-family: 'Nanum Gothic', sans-serif;
 }
 th{
-background-color:  #8C8CF5;
+background-color:  #3366CC;
 color:white;
 font-family: 'Nanum Gothic', sans-serif;
 font-size:13px;
 }
 td{
-border:1px solid #8C8CF5;
+border:1px solid #3366CC;
 border-collapse: collapse;
 font-family: 'Nanum Gothic', sans-serif;
 font-size:13px;

@@ -26,7 +26,7 @@ font-family: 'Nanum Gothic', sans-serif;
 padding:10px;
 }
 tr, td{ 
-border:1px solid #000000;
+border:1px solid #2e53b6;
 border-collapse: collapse;
 font-family: 'Nanum Gothic', sans-serif;
 color :#444444;
@@ -36,7 +36,7 @@ padding:10px;
 th{
 font-family: 'Nanum Gothic', sans-serif;
 color: white;
-background-color: #000000;
+background-color: #2e53b6;
 padding:10px;
 }
 button {

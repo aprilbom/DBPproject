@@ -36,7 +36,7 @@ else{
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none"></span>
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" onclick="javascript:location.href='professor_main.jsp'" src="img/snow.jpg" alt="" href="professor_main.jsp">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" onclick="javascript:location.href='professor_main.jsp'" src="img/smulogo.png" alt="" href="professor_main.jsp">
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +46,7 @@ else{
       <ul class="navbar-nav">
         <li class="nav-item">
         	<% if (login==1) {%>
-        	<a class="nav-link"><%=session_id %> 丛 立加吝</a> <% }%>
+        	<a class="nav-link">[背荐] : <%=session_id %> 丛 立加吝</a> <% }%>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="insert_prof.jsp">Open Class</a>
