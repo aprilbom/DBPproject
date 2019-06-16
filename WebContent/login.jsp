@@ -22,6 +22,15 @@
 
 </head>
 <style>
+form-control-lg {
+  padding-right: 0;
+  padding-left: 0;
+  height: calc(1.5em + 1rem + 2px);
+  padding: 0.5rem 1rem;
+  font-size: 1.09375rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
 #button {
   background:#FFFFCC;
   color:#444444;
@@ -81,13 +90,16 @@
 
 		<form id="ff" method="post" action="login_verify.jsp" >
 		
-		<div align = "center">ID :<input type="text" name="userID" style = "display:block; margin-bottom:10px;"></div>
-		<div align = "center">PW :<input type="password" name="userPassword" style = "display:block;">
-		</div>
-		<br>
-		<div align = "center">
-		<INPUT id = "button" TYPE="SUBMIT" NAME="Submit" VALUE="login" >
-		<INPUT id = "button" TYPE="RESET" VALUE="cancle" ></div>
+			<div class="form-group">
+				<input class="form-control-lg" name="userID" type="text" placeholder="ID" id="inputLarge">
+			</div>
+			<div class="form-group">
+				<input class="form-control-lg" name="userPassword" type="password" placeholder="Password" id="inputLarge" style = "display:block;">
+			</div>
+			<br>
+			<div>
+			<INPUT id = "button" TYPE="SUBMIT" NAME="Submit" VALUE="login" >
+			<INPUT id = "button" TYPE="RESET" VALUE="cancle" ></div>
 
 		</form>
 		</table>
@@ -110,5 +122,9 @@
   <script src="js/resume.min.js"></script>
   
 </body>
+<<<<<<< HEAD
 </HTML>
 
+=======
+</HTML>
+>>>>>>> refs/heads/design_align
