@@ -6,10 +6,6 @@
 <style>
 }
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
-a:hover {
- color:#ffffff;
- border-bottom:1px solid black;
-}
 table{
 margin-top:40px;
 border:none;
@@ -31,18 +27,21 @@ font-family: 'Nanum Gothic', sans-serif;
 font-size:13px;
 padding:10px;
 }
-button {
+button, input[type=submit] {
   background:#FFFFCC;
   color:#444444;
   border:none;
   height:25px;
-  font-size:1.6em;
+  font-size:14px;
   padding:0 0.5em;
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
   align:center;
   font-family: 'Nanum Gothic', sans-serif;
+}
+form {
+	padding:2em;
 }
 </style>
 </head>
@@ -52,12 +51,10 @@ button {
        <h2 class="mb-5">My Class</h2>
 	<%@ include file="top_prof.jsp"%>
 	
-	<% if (session_id==null) {
-	response.sendRedirect("login.jsp");
-	return;
-	}
+	<% if (session_id==null)
+			response.sendRedirect("login.jsp");
+
 	%>
-	<form id="my_form" action="see_course_search_prof.jsp" method="post">
 	
 	<table height="100px" width="75%">
 		<tr>
@@ -139,11 +136,12 @@ button {
 		</tr>
 		
 		
-		
 <%      
-		}
-		}
-			
+				}
+			}
+			%>
+			</table>
+			<%
 			
 			CallableStatement cstmt = myConn.prepareCall("{call SelectTimeTableprof(?,?,?,?,?)}");
 			cstmt.setString(1, session_id);
@@ -158,25 +156,21 @@ button {
 				%>
 				
 			
-			<table width="75%" height="15%" align="center" style="border: none; ">
-			<tr style="border: none;"><td style="border: none;">
-			<%=nYear%>년도 <%=nSemester%>학기 강의 조회
-			</td></tr>
-			<tr style="border: none;">
+			<table width="75%" height="15%">
+			<tr style="border: none">
+				<td style="border: none;"><%=nYear%>년도 <%=nSemester%>학기 강의 조회</td>
+			</tr>
+			<tr style="border: none">
 				<td style="border: none;">● 총 <%=result1%> 과목을 개설했습니다.</td>
 			</tr>
-			
-			<table width="50%" align="center" style="border: none; ">
-			<tr style="border: none;" >
-				<td style="border: none;"><input type="text" id="nYear" name="nYear" value=<%=nYear%> /> 년도</td>
-				<td style="border: none;"><input type="text" id="nSemester" name="nSemester" value=<%=nSemester%> />학기</td>
-				<td style="border: none;"><input type="submit" value="조회" style=" border-color: black; color: black; padding-top:3px; border-radius: 4px;
-    cursor: pointer;  width: 70%;
-    
-    font-size:15px;
-    align:center;"/></td>
-			</tr>
 			</table>
+			
+			
+			<form id="my_form" action="see_course_search_prof.jsp" method="post" >
+				<td><input type="text" id="nYear" name="nYear" value=<%=nYear%> /> 년도</td>
+				<td><input type="text" id="nSemester" name="nSemester" value=<%=nSemester%> />학기</td>
+				<td><input type="submit" value="조회"></td>
+			</form>
 			
 
 		<%
@@ -192,7 +186,7 @@ button {
 					}
 			}
 		%>
-</form>
-	</table>
+		</div>
+		</section>
 </body>
 </html>

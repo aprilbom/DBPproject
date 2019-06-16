@@ -4,52 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>신규 강의 개설</title>
-<style>
-ul{text-align: center; color:#ffffff;}
-ul li {display:inline-block; margin-right: 60px; color:#ffffff;}
-ul li:LAST-CHILD{ margin-right: 0;}
-nav{
-margin-top:100px;
-padding:1px 0;
-background-color:#0d0d5b;
-border-top: 1px solid #0d0d5b;
-border-bottom: 1px solid #0d0d5b;
-color:#ffffff;
-}
- 
-a:hover {
- color:#ffffff;
- border-bottom:1px solid black;
-}
 
-input[type=submit] {
-    width: 50%;
-    
-    font-size:20px;
-    border-color: #0d0d5b;
-    color: #0d0d5b;
-    background-color:white;
-    margin-top:10px;
-    padding-top:3px;
-    border-radius: 4px;
-    cursor: pointer;
-    align:center;
-}
-table{
-   margin-top:80px;
-   border: 0px solid #0d0d5b;
-   text-align: center;
-   }
-   
-th{
-   background-color:  #0d0d5b;
-   color:white;
-   }
-   td{
-   border:1px solid #0d0d5b;
-   
-   }
-</style>
 </head>
 <body>
 <%

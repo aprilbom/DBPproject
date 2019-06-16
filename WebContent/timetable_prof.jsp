@@ -143,7 +143,8 @@ String color[] = {"#adc87a", "#90cec1", "#83a3e3", "#f0ad72", "#e18b7b", "#e5c47
 Class.forName(dbdriver);
 myConn = DriverManager.getConnection(dburl, user, passwd);
 stmt = myConn.createStatement();
-mySQL = "select * from course where p_id IN (select p_id from open where p_id = '" + session_id + "' and e_year ='" + nYear + "'and e_semester = '" + nSemester +"')";
+mySQL = "select * from course c, professor p where c.p_id = p.p_id and (c.c_id, c.c_class) in (select c_id, c_class from open where e_year ="
+		+ nYear + " and e_semester ="+ nSemester + " and p_id='" + session_id + "')";
 myResultSet = stmt.executeQuery(mySQL);
 %>
 <table id=timetable align="center" class="table_style1">
@@ -194,7 +195,7 @@ myResultSet = stmt.executeQuery(mySQL);
       int startTime = hr*4+min/15;
       hr = Integer.parseInt(c_time.substring(6, 8));
       min = Integer.parseInt(c_time.substring(9, 11));
-      System.out.println("hh" + hr + min + startTime);
+      
       if(endHr < hr)
          endHr = hr;
       int endTime = hr*4+min/15;

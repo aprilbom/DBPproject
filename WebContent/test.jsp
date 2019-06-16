@@ -121,7 +121,6 @@ font-family: 'Nanum Gothic', sans-serif;
 		
 		int snum = Integer.parseInt(request.getParameter("select"));
 		String cnum =new String(request.getParameter("course_num").getBytes("8859_1"), "EUC-KR");
-		System.out.println(cnum);
 		
 		mySQL0 = "{? = call Date2EnrollYear(SYSDATE)}";
 		CallableStatement cstmt = myConn.prepareCall(mySQL0);

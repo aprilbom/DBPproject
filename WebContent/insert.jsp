@@ -140,8 +140,7 @@ if (session_id==null) {
 		      + nYear + " and e_semester =" + nSemester + ")";
 		mySQL2 = "select c_id, c_name, c_class, c_day, c_time, p_name from course c, professor p where c.p_id = p.p_id and c.c_id not in (select c_id from enroll where s_id='" + session_id + "')"; 
 		%>
-		
-		<!--<h3 style="text-align: center;"><%=mySQL%></h3>-->
+
 		<%
 		ResultSet rs = stmt.executeQuery(mySQL);
 		ResultSet rscomp = stmt_comp.executeQuery(mySQL2);
