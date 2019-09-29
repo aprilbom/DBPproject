@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>¼÷¸í¿©´ë ¼ö°­½ÅÃ» ½Ã½ºÅÛ</title>
+  <title>ìˆ™ëª…ì—¬ëŒ€ ìˆ˜ê°•ì‹ ì²­ ì‹œìŠ¤í…œ</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -122,9 +122,6 @@ form-control-lg {
   <script src="js/resume.min.js"></script>
   
 </body>
-<<<<<<< HEAD
+
 </HTML>
 
-=======
-</HTML>
->>>>>>> refs/heads/design_align
